@@ -877,24 +877,24 @@
     },
     {
       "path": "README.md",
-      "sha256": "ed6e1831a05786082361a093b3ffde6993b64e644b2a4fa82470de68a1fa7b22",
-      "bytes": 9080,
+      "sha256": "2958e11e43ce8a6dd5f40b58d8830d90098fab1a4f9691966ee1646b261b05c7",
+      "bytes": 14276,
       "evidence_category": "documentation",
       "generation": "allowlisted input; identifying strings redacted",
       "license": "MIT",
       "source_path": "README.md",
-      "source_sha256": "ed6e1831a05786082361a093b3ffde6993b64e644b2a4fa82470de68a1fa7b22",
+      "source_sha256": "2958e11e43ce8a6dd5f40b58d8830d90098fab1a4f9691966ee1646b261b05c7",
       "byte_identical": true
     },
     {
       "path": "README.zh-CN.md",
-      "sha256": "4a030db77f97ca3d38fa3228d4478dd64770ebc4093ffba0795412fc1994cfb8",
-      "bytes": 7341,
+      "sha256": "f34b85b4c40344137d0c2c2adc91b302f4e5cca3ce2c3f3ef5140a76099184c3",
+      "bytes": 8325,
       "evidence_category": "documentation",
       "generation": "allowlisted input; identifying strings redacted",
       "license": "MIT",
       "source_path": "README.zh-CN.md",
-      "source_sha256": "4a030db77f97ca3d38fa3228d4478dd64770ebc4093ffba0795412fc1994cfb8",
+      "source_sha256": "f34b85b4c40344137d0c2c2adc91b302f4e5cca3ce2c3f3ef5140a76099184c3",
       "byte_identical": true
     },
     {
