@@ -1,0 +1,16 @@
+{
+  "protocol_id": "cuda-layout-residency-eviction-v1",
+  "seed": 20260908,
+  "batches": 5,
+  "samples_per_batch": 30,
+  "conversion_samples": 150,
+  "warmup": 10,
+  "fp64_points": 64,
+  "cudnn_benchmark_limit": 10,
+  "eviction_bytes": 268435456,
+  "shape_timeout_seconds": 600,
+  "precision": "FP32 with TF32 disabled; deterministic false",
+  "timing": "one logical op per CUDA graph with external event nodes; separate synchronized eager API and pinned CPU-to-CPU calls",
+  "shape_selection": "eight structural points frozen before extension measurements, same as profiling plan",
+  "shape_ids": ["gc_78e99ae160f2dd60","gc_ccafda2438d25cd0","gc_89f7910f07a199fb","gc_f49992cd44897fbf","gc_053183ea91616041","gc_62e0ae05b7836be7","gc_866eddd9507e8dc4","gc_8a8acca0747584c4"]
+}

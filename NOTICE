@@ -1,0 +1,17 @@
+GroupConv Atlas
+Copyright (c) 2026 Xiangguo Zhang
+https://github.com/LucisZhang/groupconv-atlas
+
+Original source code, build/test/configuration files, and explanatory documentation
+are licensed under MIT (LICENSE). Original experimental datasets, numerical results,
+plots, and presentation graphics are licensed under CC BY 4.0 (DATA_LICENSE).
+The license follows the content type, including mixed evidence directories and
+frozen numerical source copies. Third-party notices and licenses remain applicable
+to their respective materials; no third-party runtime binary is bundled.
+
+Suggested dataset/figure attribution:
+Xiangguo Zhang, GroupConv Atlas (2026), https://github.com/LucisZhang/groupconv-atlas,
+CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Indicate modifications.
+
+Source implementation and experiment work used Codex assistance. See
+CONTRIBUTIONS and the evidence index for the supported authorship/result scope.

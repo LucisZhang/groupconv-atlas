@@ -1,0 +1,3047 @@
+{
+  "schema_version": 1,
+  "frozen_date": "2026-09-08",
+  "count": 80,
+  "shapes": [
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_78e99ae160f2dd60",
+      "input_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_a22b31554556b791",
+      "input_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_9cd2cf8990c7cb77",
+      "input_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_ae2de9fe773a1e34",
+      "input_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_be9772e9b79ddcc0",
+      "input_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_ab680a8f6762e0e0",
+      "input_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_5fa751e3a7f30b52",
+      "input_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_5f016b72a0d68851",
+      "input_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_ec7e1a0a64ff9301",
+      "input_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_dfa7d59269e0dcce",
+      "input_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_3aeb2889e7a3ff86",
+      "input_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_3afce2b434a92a43",
+      "input_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_3e559a8fe1fbe169",
+      "input_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_4bc024996397efd1",
+      "input_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_2f9366efc6d12fd6",
+      "input_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_dabb582ec8f0952e",
+      "input_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_12a6be6336199cc1",
+      "input_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_ccafda2438d25cd0",
+      "input_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_e6299d9827421cfd",
+      "input_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_63fdc70ecbe82a98",
+      "input_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_b8fcb46fab464a6d",
+      "input_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_bb4dd9bf9d7b428e",
+      "input_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_e234e01021864d54",
+      "input_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_f49992cd44897fbf",
+      "input_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_cdad9cfa0ae813f4",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_1540a8f231ee8086",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_89f7910f07a199fb",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_500c5dfd21669b0e",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_08874e600e039f7d",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_c6f48f627057f0ac",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_483c7e77e85eb244",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_4e22e14c732223d0",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_866eddd9507e8dc4",
+      "input_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_6f81a9cf603b5464",
+      "input_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_81b055502d0e876d",
+      "input_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_8a0b54c68d8468fb",
+      "input_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_d261fcf26fc1c15a",
+      "input_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_296ad0d7012c2ea5",
+      "input_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_cb5163f79b28fda2",
+      "input_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_70fccacc501d7b1c",
+      "input_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_25ff201831f41fcb",
+      "input_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_cda4fc3cdb408a40",
+      "input_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_84efc2d9aa580e43",
+      "input_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_01abb40119e46a0c",
+      "input_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_238ecb71606ed02b",
+      "input_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_6eb796fc00cf520c",
+      "input_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_7b9daf9ed503e5dc",
+      "input_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 7,
+      "w": 7,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_1488b29f849f23c4",
+      "input_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        7,
+        7
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_053183ea91616041",
+      "input_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_b3013c0c981c39ac",
+      "input_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_4be0dc057d3ac36b",
+      "input_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_56e5bdbf90cf0cc5",
+      "input_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_fdcf57a6600beda8",
+      "input_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_c29cc54df190ed9c",
+      "input_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_31f0eacfdfa3472c",
+      "input_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 14,
+      "w": 14,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_05d4fc67b5305c66",
+      "input_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        14,
+        14
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_c71a0279eaf3451a",
+      "input_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_46b1993f3242a525",
+      "input_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_2172a5c8e6e7a788",
+      "input_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_8a8acca0747584c4",
+      "input_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_b500de8765775ad2",
+      "input_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_f0c887d061ad439c",
+      "input_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_f197defad96b2a97",
+      "input_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 28,
+      "w": 28,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_22ea64dd94cc57bc",
+      "input_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_23348257a76f0d1c",
+      "input_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_e72c1d4984cc3237",
+      "input_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_62e0ae05b7836be7",
+      "input_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_67d61451c3cbea24",
+      "input_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_fb2e98bc315c2b57",
+      "input_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_bb76907f67ad78ba",
+      "input_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_bc3d77d296ecccb7",
+      "input_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_2ea0f05d97f3acc2",
+      "input_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 256,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_3525895f023dc1bb",
+      "input_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 128,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_2c78ab54f440d477",
+      "input_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        2,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 64,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_ed9054140e50c934",
+      "input_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_76feea56f2a277a2",
+      "input_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_6654cb3b1166775b",
+      "input_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 8,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_c7aaa37367629b96",
+      "input_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        32,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_88f9078d0e7f3354",
+      "input_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        64,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 32,
+      "cin": 256,
+      "cout": 256,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_9318cb5a310104ac",
+      "input_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "weight_dims": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "output_dims": [
+        32,
+        256,
+        112,
+        112
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    }
+  ]
+}

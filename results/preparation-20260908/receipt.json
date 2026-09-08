@@ -1,0 +1,40 @@
+{
+  "kind": "model_shapes_cpu_preparation",
+  "status": "PASS",
+  "report_sha256": "f0cfd98be7ad8ee61e90533d0f4410ddb691e42a348b157f98589c6b8b9efdf4",
+  "protocol_sha256": "b66ec7ff3f749c8149534bc74afff469e4798383b3a8930331918c2b5ddb6938",
+  "export_source_files": {
+    "scripts/export_model_shapes.py": "01895c8b83f02c595adb742c976150feb869e4cdba255680cb12bf1c9285c4a6",
+    "bench/api.py": "30b671eb659d7a6cb88f87fefee95fe34f76f899912ab08571feabaa8dd232f7",
+    "configs/model-shapes-protocol.json": "b66ec7ff3f749c8149534bc74afff469e4798383b3a8930331918c2b5ddb6938"
+  },
+  "export_source_sha256": "192fd0d2d0ef27f48914ddd86f5dd8ce0d277e7dfb5fa9bbf7601cbe0ed5081a",
+  "environment": {
+    "device": "cpu",
+    "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.11.15",
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "numpy": "2.4.6",
+    "python_executable": "/private/tmp/groupconv-models-023/bin/python"
+  },
+  "commands": [
+    {
+      "command": "/private/tmp/groupconv-models-023/bin/python -m scripts.export_model_shapes --output /private/tmp/groupconv-model-shapes-023.json",
+      "exit_code": 0,
+      "result": "12 actual forward shapes; 8 SUPPORTED and 4 bias UNSUPPORTED; final protocol hash matched"
+    },
+    {
+      "command": "GC_RUN_MODEL_EXPORT=1 /private/tmp/groupconv-models-023/bin/python -m unittest discover -s tests -p test_model_shapes.py -v",
+      "exit_code": 0,
+      "result": "5 tests OK including real CPU forward and frozen bias semantics"
+    }
+  ],
+  "boundaries": {
+    "gpu_execution": "NOT_RUN",
+    "pretrained_weights": null,
+    "accuracy": "NOT_RUN",
+    "performance": "NOT_RUN",
+    "bias_policy": "source bias preserved; native biased layers UNSUPPORTED"
+  }
+}

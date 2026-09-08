@@ -1,0 +1,1076 @@
+{
+  "schema_version": 2,
+  "protocol_id": "torchvision-0.23.0-forward-conv-shapes-v2",
+  "torchvision_version": "0.23.0",
+  "seed": 20260908,
+  "weights": null,
+  "weights_identity": "random_initialization_weights_None",
+  "input_chw": [
+    3,
+    224,
+    224
+  ],
+  "batches": [
+    1,
+    4
+  ],
+  "device": "cpu",
+  "dtype": "float32",
+  "mode": "eval_inference",
+  "scope": "actual forward-hook shape provenance; no pretrained weights, accuracy, or end-to-end model performance claim",
+  "selection": {
+    "mobilenet_v2": [
+      "features.3.conv.1.0",
+      "features.2.conv.1.0"
+    ],
+    "resnext50_32x4d": [
+      "layer1.0.conv2",
+      "layer2.0.conv2"
+    ],
+    "convnext_tiny": [
+      "features.1.0.block.0",
+      "features.3.0.block.0"
+    ]
+  },
+  "expected_record_count": 12,
+  "frozen_from": {
+    "torchvision_version": "0.23.0",
+    "torch_version": "2.8.0",
+    "device": "cpu",
+    "method": "actual_cpu_forward_hook"
+  },
+  "native_bias_policy": "source bias preserved; biased layers UNSUPPORTED because bias not implemented",
+  "no_bias_geometry_experiment_default": false,
+  "frozen_shapes": [
+    {
+      "n": 1,
+      "cin": 144,
+      "cout": 144,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 144,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_c38ac171b7ce4e39",
+      "input_dims": [
+        1,
+        144,
+        56,
+        56
+      ],
+      "weight_dims": [
+        144,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        144,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false,
+      "model": "mobilenet_v2",
+      "module_path": "features.3.conv.1.0",
+      "source_has_bias": false,
+      "source_operation_attributes": {
+        "n": 1,
+        "cin": 144,
+        "cout": 144,
+        "h": 56,
+        "w": 56,
+        "r": 3,
+        "s": 3,
+        "groups": 144,
+        "sh": 1,
+        "sw": 1,
+        "ph": 1,
+        "pw": 1,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          1,
+          144,
+          56,
+          56
+        ],
+        "weight_dims": [
+          144,
+          1,
+          3,
+          3
+        ],
+        "output_dims": [
+          1,
+          144,
+          56,
+          56
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": false,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": null,
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_716ed91e25b44390",
+      "no_bias_geometry_id": "gc_c38ac171b7ce4e39",
+      "native_status": "SUPPORTED",
+      "native_reason": null
+    },
+    {
+      "n": 1,
+      "cin": 96,
+      "cout": 96,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 96,
+      "sh": 2,
+      "sw": 2,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_eee1abbf8749c762",
+      "input_dims": [
+        1,
+        96,
+        112,
+        112
+      ],
+      "weight_dims": [
+        96,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        96,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false,
+      "model": "mobilenet_v2",
+      "module_path": "features.2.conv.1.0",
+      "source_has_bias": false,
+      "source_operation_attributes": {
+        "n": 1,
+        "cin": 96,
+        "cout": 96,
+        "h": 112,
+        "w": 112,
+        "r": 3,
+        "s": 3,
+        "groups": 96,
+        "sh": 2,
+        "sw": 2,
+        "ph": 1,
+        "pw": 1,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          1,
+          96,
+          112,
+          112
+        ],
+        "weight_dims": [
+          96,
+          1,
+          3,
+          3
+        ],
+        "output_dims": [
+          1,
+          96,
+          56,
+          56
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": false,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": null,
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_b48a880820fd0775",
+      "no_bias_geometry_id": "gc_eee1abbf8749c762",
+      "native_status": "SUPPORTED",
+      "native_reason": null
+    },
+    {
+      "n": 4,
+      "cin": 144,
+      "cout": 144,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 144,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_2cfd9411e9d22559",
+      "input_dims": [
+        4,
+        144,
+        56,
+        56
+      ],
+      "weight_dims": [
+        144,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        4,
+        144,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false,
+      "model": "mobilenet_v2",
+      "module_path": "features.3.conv.1.0",
+      "source_has_bias": false,
+      "source_operation_attributes": {
+        "n": 4,
+        "cin": 144,
+        "cout": 144,
+        "h": 56,
+        "w": 56,
+        "r": 3,
+        "s": 3,
+        "groups": 144,
+        "sh": 1,
+        "sw": 1,
+        "ph": 1,
+        "pw": 1,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          4,
+          144,
+          56,
+          56
+        ],
+        "weight_dims": [
+          144,
+          1,
+          3,
+          3
+        ],
+        "output_dims": [
+          4,
+          144,
+          56,
+          56
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": false,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": null,
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_0cc742b787959099",
+      "no_bias_geometry_id": "gc_2cfd9411e9d22559",
+      "native_status": "SUPPORTED",
+      "native_reason": null
+    },
+    {
+      "n": 4,
+      "cin": 96,
+      "cout": 96,
+      "h": 112,
+      "w": 112,
+      "r": 3,
+      "s": 3,
+      "groups": 96,
+      "sh": 2,
+      "sw": 2,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_2d9927cafa1321d0",
+      "input_dims": [
+        4,
+        96,
+        112,
+        112
+      ],
+      "weight_dims": [
+        96,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        4,
+        96,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false,
+      "model": "mobilenet_v2",
+      "module_path": "features.2.conv.1.0",
+      "source_has_bias": false,
+      "source_operation_attributes": {
+        "n": 4,
+        "cin": 96,
+        "cout": 96,
+        "h": 112,
+        "w": 112,
+        "r": 3,
+        "s": 3,
+        "groups": 96,
+        "sh": 2,
+        "sw": 2,
+        "ph": 1,
+        "pw": 1,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          4,
+          96,
+          112,
+          112
+        ],
+        "weight_dims": [
+          96,
+          1,
+          3,
+          3
+        ],
+        "output_dims": [
+          4,
+          96,
+          56,
+          56
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": false,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": null,
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_03eb63aec9d134da",
+      "no_bias_geometry_id": "gc_2d9927cafa1321d0",
+      "native_status": "SUPPORTED",
+      "native_reason": null
+    },
+    {
+      "n": 1,
+      "cin": 128,
+      "cout": 128,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_61260c5c0a373f9d",
+      "input_dims": [
+        1,
+        128,
+        56,
+        56
+      ],
+      "weight_dims": [
+        128,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        128,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false,
+      "model": "resnext50_32x4d",
+      "module_path": "layer1.0.conv2",
+      "source_has_bias": false,
+      "source_operation_attributes": {
+        "n": 1,
+        "cin": 128,
+        "cout": 128,
+        "h": 56,
+        "w": 56,
+        "r": 3,
+        "s": 3,
+        "groups": 32,
+        "sh": 1,
+        "sw": 1,
+        "ph": 1,
+        "pw": 1,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          1,
+          128,
+          56,
+          56
+        ],
+        "weight_dims": [
+          128,
+          4,
+          3,
+          3
+        ],
+        "output_dims": [
+          1,
+          128,
+          56,
+          56
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": false,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": null,
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_0be9fa4dbc09ce61",
+      "no_bias_geometry_id": "gc_61260c5c0a373f9d",
+      "native_status": "SUPPORTED",
+      "native_reason": null
+    },
+    {
+      "n": 1,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 2,
+      "sw": 2,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_18362726de254972",
+      "input_dims": [
+        1,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false,
+      "model": "resnext50_32x4d",
+      "module_path": "layer2.0.conv2",
+      "source_has_bias": false,
+      "source_operation_attributes": {
+        "n": 1,
+        "cin": 256,
+        "cout": 256,
+        "h": 56,
+        "w": 56,
+        "r": 3,
+        "s": 3,
+        "groups": 32,
+        "sh": 2,
+        "sw": 2,
+        "ph": 1,
+        "pw": 1,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          1,
+          256,
+          56,
+          56
+        ],
+        "weight_dims": [
+          256,
+          8,
+          3,
+          3
+        ],
+        "output_dims": [
+          1,
+          256,
+          28,
+          28
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": false,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": null,
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_e23883f36417d4be",
+      "no_bias_geometry_id": "gc_18362726de254972",
+      "native_status": "SUPPORTED",
+      "native_reason": null
+    },
+    {
+      "n": 4,
+      "cin": 128,
+      "cout": 128,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_e7ffe082dbb95bd9",
+      "input_dims": [
+        4,
+        128,
+        56,
+        56
+      ],
+      "weight_dims": [
+        128,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        4,
+        128,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false,
+      "model": "resnext50_32x4d",
+      "module_path": "layer1.0.conv2",
+      "source_has_bias": false,
+      "source_operation_attributes": {
+        "n": 4,
+        "cin": 128,
+        "cout": 128,
+        "h": 56,
+        "w": 56,
+        "r": 3,
+        "s": 3,
+        "groups": 32,
+        "sh": 1,
+        "sw": 1,
+        "ph": 1,
+        "pw": 1,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          4,
+          128,
+          56,
+          56
+        ],
+        "weight_dims": [
+          128,
+          4,
+          3,
+          3
+        ],
+        "output_dims": [
+          4,
+          128,
+          56,
+          56
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": false,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": null,
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_7bfe42cc72b7a295",
+      "no_bias_geometry_id": "gc_e7ffe082dbb95bd9",
+      "native_status": "SUPPORTED",
+      "native_reason": null
+    },
+    {
+      "n": 4,
+      "cin": 256,
+      "cout": 256,
+      "h": 56,
+      "w": 56,
+      "r": 3,
+      "s": 3,
+      "groups": 32,
+      "sh": 2,
+      "sw": 2,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_7e8fe6fcfca2572f",
+      "input_dims": [
+        4,
+        256,
+        56,
+        56
+      ],
+      "weight_dims": [
+        256,
+        8,
+        3,
+        3
+      ],
+      "output_dims": [
+        4,
+        256,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false,
+      "model": "resnext50_32x4d",
+      "module_path": "layer2.0.conv2",
+      "source_has_bias": false,
+      "source_operation_attributes": {
+        "n": 4,
+        "cin": 256,
+        "cout": 256,
+        "h": 56,
+        "w": 56,
+        "r": 3,
+        "s": 3,
+        "groups": 32,
+        "sh": 2,
+        "sw": 2,
+        "ph": 1,
+        "pw": 1,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          4,
+          256,
+          56,
+          56
+        ],
+        "weight_dims": [
+          256,
+          8,
+          3,
+          3
+        ],
+        "output_dims": [
+          4,
+          256,
+          28,
+          28
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": false,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": null,
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_7eb6922a7764b6c2",
+      "no_bias_geometry_id": "gc_7e8fe6fcfca2572f",
+      "native_status": "SUPPORTED",
+      "native_reason": null
+    },
+    {
+      "n": 1,
+      "cin": 96,
+      "cout": 96,
+      "h": 56,
+      "w": 56,
+      "r": 7,
+      "s": 7,
+      "groups": 96,
+      "sh": 1,
+      "sw": 1,
+      "ph": 3,
+      "pw": 3,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "conv2d_ae226e2ce2ccd048",
+      "input_dims": [
+        1,
+        96,
+        56,
+        56
+      ],
+      "weight_dims": [
+        96,
+        1,
+        7,
+        7
+      ],
+      "output_dims": [
+        1,
+        96,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": true,
+      "model": "convnext_tiny",
+      "module_path": "features.1.0.block.0",
+      "source_has_bias": true,
+      "source_operation_attributes": {
+        "n": 1,
+        "cin": 96,
+        "cout": 96,
+        "h": 56,
+        "w": 56,
+        "r": 7,
+        "s": 7,
+        "groups": 96,
+        "sh": 1,
+        "sw": 1,
+        "ph": 3,
+        "pw": 3,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          1,
+          96,
+          56,
+          56
+        ],
+        "weight_dims": [
+          96,
+          1,
+          7,
+          7
+        ],
+        "output_dims": [
+          1,
+          96,
+          56,
+          56
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": true,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": [
+          96
+        ],
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_ae226e2ce2ccd048",
+      "no_bias_geometry_id": "gc_7a5bbbc9146af74e",
+      "native_status": "UNSUPPORTED",
+      "native_reason": "bias not implemented"
+    },
+    {
+      "n": 1,
+      "cin": 192,
+      "cout": 192,
+      "h": 28,
+      "w": 28,
+      "r": 7,
+      "s": 7,
+      "groups": 192,
+      "sh": 1,
+      "sw": 1,
+      "ph": 3,
+      "pw": 3,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "conv2d_83aecb22d35217c6",
+      "input_dims": [
+        1,
+        192,
+        28,
+        28
+      ],
+      "weight_dims": [
+        192,
+        1,
+        7,
+        7
+      ],
+      "output_dims": [
+        1,
+        192,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": true,
+      "model": "convnext_tiny",
+      "module_path": "features.3.0.block.0",
+      "source_has_bias": true,
+      "source_operation_attributes": {
+        "n": 1,
+        "cin": 192,
+        "cout": 192,
+        "h": 28,
+        "w": 28,
+        "r": 7,
+        "s": 7,
+        "groups": 192,
+        "sh": 1,
+        "sw": 1,
+        "ph": 3,
+        "pw": 3,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          1,
+          192,
+          28,
+          28
+        ],
+        "weight_dims": [
+          192,
+          1,
+          7,
+          7
+        ],
+        "output_dims": [
+          1,
+          192,
+          28,
+          28
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": true,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": [
+          192
+        ],
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_83aecb22d35217c6",
+      "no_bias_geometry_id": "gc_b868fd31e31fac4a",
+      "native_status": "UNSUPPORTED",
+      "native_reason": "bias not implemented"
+    },
+    {
+      "n": 4,
+      "cin": 96,
+      "cout": 96,
+      "h": 56,
+      "w": 56,
+      "r": 7,
+      "s": 7,
+      "groups": 96,
+      "sh": 1,
+      "sw": 1,
+      "ph": 3,
+      "pw": 3,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "conv2d_2e9290c975498827",
+      "input_dims": [
+        4,
+        96,
+        56,
+        56
+      ],
+      "weight_dims": [
+        96,
+        1,
+        7,
+        7
+      ],
+      "output_dims": [
+        4,
+        96,
+        56,
+        56
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": true,
+      "model": "convnext_tiny",
+      "module_path": "features.1.0.block.0",
+      "source_has_bias": true,
+      "source_operation_attributes": {
+        "n": 4,
+        "cin": 96,
+        "cout": 96,
+        "h": 56,
+        "w": 56,
+        "r": 7,
+        "s": 7,
+        "groups": 96,
+        "sh": 1,
+        "sw": 1,
+        "ph": 3,
+        "pw": 3,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          4,
+          96,
+          56,
+          56
+        ],
+        "weight_dims": [
+          96,
+          1,
+          7,
+          7
+        ],
+        "output_dims": [
+          4,
+          96,
+          56,
+          56
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": true,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": [
+          96
+        ],
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_2e9290c975498827",
+      "no_bias_geometry_id": "gc_c3d00e784b6fedba",
+      "native_status": "UNSUPPORTED",
+      "native_reason": "bias not implemented"
+    },
+    {
+      "n": 4,
+      "cin": 192,
+      "cout": 192,
+      "h": 28,
+      "w": 28,
+      "r": 7,
+      "s": 7,
+      "groups": 192,
+      "sh": 1,
+      "sw": 1,
+      "ph": 3,
+      "pw": 3,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "conv2d_ef8885ad55a08294",
+      "input_dims": [
+        4,
+        192,
+        28,
+        28
+      ],
+      "weight_dims": [
+        192,
+        1,
+        7,
+        7
+      ],
+      "output_dims": [
+        4,
+        192,
+        28,
+        28
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": true,
+      "model": "convnext_tiny",
+      "module_path": "features.3.0.block.0",
+      "source_has_bias": true,
+      "source_operation_attributes": {
+        "n": 4,
+        "cin": 192,
+        "cout": 192,
+        "h": 28,
+        "w": 28,
+        "r": 7,
+        "s": 7,
+        "groups": 192,
+        "sh": 1,
+        "sw": 1,
+        "ph": 3,
+        "pw": 3,
+        "dh": 1,
+        "dw": 1,
+        "input_dims": [
+          4,
+          192,
+          28,
+          28
+        ],
+        "weight_dims": [
+          192,
+          1,
+          7,
+          7
+        ],
+        "output_dims": [
+          4,
+          192,
+          28,
+          28
+        ],
+        "dtype": "float32",
+        "layout": "NCHW",
+        "bias": true,
+        "operator": "torch.nn.Conv2d",
+        "bias_dims": [
+          192
+        ],
+        "padding_mode": "zeros"
+      },
+      "source_operation_id": "conv2d_ef8885ad55a08294",
+      "no_bias_geometry_id": "gc_128d84aed131c6a4",
+      "native_status": "UNSUPPORTED",
+      "native_reason": "bias not implemented"
+    }
+  ],
+  "expected_native_supported_count": 8,
+  "expected_native_unsupported_count": 4
+}

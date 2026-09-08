@@ -1,0 +1,145 @@
+{
+  "audit_status": "PASS",
+  "scope": "two separate first matching warmup captures under kernel replay/cache-all/clock-none",
+  "source_tree_sha256": "5b499cd77b1594e501fce8c8d457ec147ffe410ae5764fa6b1df1a4566934cbd",
+  "binary_sha256": "7052f675b6d573c986fe448406e668e6e5ec7cd7f730d00dd999475c29730c36",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4090",
+    "uuid": "DEVICE_8fdfe034723b",
+    "driver_version": "575.51.03"
+  },
+  "input_sha256": {
+    "manifest.json": "c2e8005273a27710340172e1878ad4cf907b2dc9f618b213f47f39b618f762fe",
+    "collector.py": "31d71cc3efbce9d5c10d8423555066cbc89d9093aacc4170e3f4579ef0260a2a",
+    "ncu_csv.py": "3f19d5b28a136a92e81cd7cac4abb4714d8d88ba6220337a8d294890d627be7e",
+    "gpu-before.stdout.txt": "74f2caa9f6bc9c45473bc6f46fa26ca7deb60ff2ce42252e89a97298562f59ef",
+    "gpu-before.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ncu-version.stdout.txt": "51568705db6a9090604111731ae421e10b2a73658b59489a8b8ed7b0d5a7460b",
+    "ncu-version.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logical_copy.stdout.txt": "82424211e2da1663ba7e4e1ce30018b6cad13ff48592c670190419238328aa56",
+    "logical_copy.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logical_copy-export.stdout.txt": "b2e0533bb53838a51f2e0bf386066666b2ea90fa47f024e9dd8a5db8852c4690",
+    "logical_copy-export.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "eight_fma_chains.stdout.txt": "c8725e2e391a90b787f5d51554ef140641e91dcccca5e986933400409b4e031c",
+    "eight_fma_chains.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "eight_fma_chains-export.stdout.txt": "ff622f2c7f17c9015980abc6f79f4a1409d21778451ef5e2dd9799c4174c4f99",
+    "eight_fma_chains-export.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gpu-after.stdout.txt": "74f2caa9f6bc9c45473bc6f46fa26ca7deb60ff2ce42252e89a97298562f59ef",
+    "gpu-after.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ncu-help-reference.txt": "62f9c7e9473087aa5a9e8e0adadc4e80d17d948512cb2d98feea50e6cec57bab",
+    "metrics-reference.txt": "9f2b27503f61f5159e83bfb69cc5ca2e51d616041a60d5a38dbc396faa7a9b62",
+    "logical_copy.ncu-rep": "a0e905f99ff27630321f37f876e650407ee2f126b7f94caef2d0720adc97aa03",
+    "eight_fma_chains.ncu-rep": "8ca3efe8bb41b9b8308408f01b68a85b149f1c249b61fc83140918022059d821"
+  },
+  "auditor_sha256": "5d6d5af9a382376b71a6cf43f1d6df032b2d34da00e0cc9502f5788ab9df7a7c",
+  "local_decoder_sha256": "3f19d5b28a136a92e81cd7cac4abb4714d8d88ba6220337a8d294890d627be7e",
+  "prior_microbench_analysis_sha256": "0b03e87eb2e4b6db13726d16639e65b33f6fb1d52563a74d702a8e3bf5e9d353",
+  "manual_instruction_review_sha256": "30b7c95efcd474c968796c924cbeb2c854a03213330d3fe1a360b23230a90256",
+  "captures": [
+    {
+      "operation": "logical_copy",
+      "counters": {
+        "kernel_name": "logical_copy(const float *, float *, unsigned long)",
+        "process_id": "152735",
+        "kernel_id": "0",
+        "metrics": {
+          "dram__bytes_read.sum": {
+            "value": 301992832.0,
+            "unit": "byte"
+          },
+          "dram__bytes_write.sum": {
+            "value": 266774272.0,
+            "unit": "byte"
+          },
+          "sm__cycles_elapsed.avg": {
+            "value": 1679079.25,
+            "unit": "cycle"
+          },
+          "gpu__time_duration.sum": {
+            "value": 639840.0,
+            "unit": "ns"
+          },
+          "smsp__sass_thread_inst_executed_op_ffma_pred_on.sum": {
+            "value": 0.0,
+            "unit": "inst"
+          }
+        }
+      },
+      "work": {
+        "operation": "logical_copy",
+        "block": 128,
+        "scale": 1,
+        "blocks": 1024,
+        "elements": 75497472,
+        "launched_threads": 131072,
+        "iterations": 0,
+        "logical_read_write_bytes": 603979776,
+        "expected_thread_ffma_instructions": 0
+      },
+      "profile_seconds": 0.00063984,
+      "dram_bytes": 568767104.0,
+      "dram_bytes_per_second_same_capture": 888920830207.5519,
+      "dram_to_logical_bytes_ratio": 0.9416989220513238,
+      "thread_ffma_matches": true,
+      "fp32_fma_flops_per_second_same_capture": null,
+      "normal_timing_not_used": true
+    },
+    {
+      "operation": "eight_fma_chains",
+      "counters": {
+        "kernel_name": "eight_fma_chains(const float *, float *, int)",
+        "process_id": "153005",
+        "kernel_id": "0",
+        "metrics": {
+          "dram__bytes_read.sum": {
+            "value": 540544.0,
+            "unit": "byte"
+          },
+          "dram__bytes_write.sum": {
+            "value": 0.0,
+            "unit": "byte"
+          },
+          "sm__cycles_elapsed.avg": {
+            "value": 298277.48,
+            "unit": "cycle"
+          },
+          "gpu__time_duration.sum": {
+            "value": 107424.0,
+            "unit": "ns"
+          },
+          "smsp__sass_thread_inst_executed_op_ffma_pred_on.sum": {
+            "value": 4294967296.0,
+            "unit": "inst"
+          }
+        }
+      },
+      "work": {
+        "operation": "eight_fma_chains",
+        "block": 128,
+        "scale": 1,
+        "blocks": 1024,
+        "elements": 131072,
+        "launched_threads": 131072,
+        "iterations": 4096,
+        "logical_read_write_bytes": 0,
+        "expected_thread_ffma_instructions": 4294967296
+      },
+      "profile_seconds": 0.00010742400000000001,
+      "dram_bytes": 540544.0,
+      "dram_bytes_per_second_same_capture": 5031873696.753053,
+      "dram_to_logical_bytes_ratio": null,
+      "thread_ffma_matches": true,
+      "fp32_fma_flops_per_second_same_capture": 79962900208519.5,
+      "normal_timing_not_used": true
+    }
+  ],
+  "sustained_compute_peak_status": "NOT_ESTABLISHED",
+  "limitations": [
+    "Single captured warmup per kernel; no CI or independent-session stability.",
+    "Original normal timings remain separate; no captured byte counts divided by normal timing.",
+    "Report hashes/export commands checked; local environment cannot re-export opaque NCU binary reports.",
+    "UUID is linked by before/after single-device logs and run manifests; CSV supplies device index/name, not independently authenticated UUID.",
+    "Numerical check covers first16 outputs after10warmups, not all captured outputs.",
+    "Copy DRAM write bytes can differ from logical stores; exact cache/writeback attribution is not measured."
+  ]
+}

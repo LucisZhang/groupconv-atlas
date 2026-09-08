@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "frozen_date": "2026-09-08",
+  "seed": 20260908,
+  "correctness_seeds": [
+    20260908,
+    17,
+    101
+  ],
+  "dtype": "float32",
+  "accumulation": "float32",
+  "tf32": false,
+  "bias": false,
+  "layout": "NCHW",
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "relative_epsilon": 1e-12,
+  "finite_required": true,
+  "warmup": 10,
+  "batches": 5,
+  "samples_per_batch": 30,
+  "confirmation_batches": 10,
+  "threads": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "repeat_target_us": 1000,
+  "repeat_cap": 100,
+  "cache_policy": "steady_state_repeated_inputs",
+  "eviction_status": "NOT_RUN",
+  "order": "seeded shuffle implementation blocks within each paired batch",
+  "api_boundary": "synchronized host wall clock; borrowed/reused native buffers; torch allocates output",
+  "opencl_event_boundary": "per-logical-op START to END event duration; repeated calls averaged",
+  "host_to_host_boundary": "upload input+weights, logical convolution, download output; reusable device buffers",
+  "layout_conversions": "none for NCHW stage B",
+  "search_cost": "no autotune; fixed candidates",
+  "confidence": {
+    "threshold": 1.05,
+    "method": "paired batch median block bootstrap",
+    "bootstrap_draws": 10000,
+    "confidence_level": 0.95,
+    "minimum_batches": 10
+  },
+  "budget_cny": {
+    "total_cap": 300,
+    "probe_cap": 30,
+    "cuda_core_cap": 120,
+    "profiling_cap": 80,
+    "storage_cap": 30,
+    "reserve_cap": 40
+  },
+  "stage_C": "PLANNED",
+  "stage_D": "PLANNED"
+}

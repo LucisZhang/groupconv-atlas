@@ -1,0 +1,22 @@
+name: CPU correctness
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  native:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit public raw evidence and source hashes
+        if: ${{ hashFiles('manifest.json') != '' }}
+        run: python3 scripts/audit_public_evidence.py --root . --require-license
+      - name: Configure CPU and OpenMP
+        run: cmake -S . -B build-ci -DGC_ENABLE_OPENCL=OFF -DGC_ENABLE_CUDA=OFF -DCMAKE_BUILD_TYPE=Release
+      - name: Compile
+        run: cmake --build build-ci --parallel 2
+      - name: Execute native correctness
+        run: ctest --test-dir build-ci --output-on-failure
+      - name: Configure address and undefined behavior checks
+        run: cmake -S . -B build-ci-sanitize -DGC_ENABLE_OPENCL=OFF -DGC_ENABLE_CUDA=OFF -DGC_ENABLE_OPENMP=OFF -DGC_SANITIZE=ON -DCMAKE_BUILD_TYPE=Debug
+      - name: Compile instrumented CPU
+        run: cmake --build build-ci-sanitize --parallel 2
+      - name: Execute instrumented correctness
+        run: ctest --test-dir build-ci-sanitize --output-on-failure

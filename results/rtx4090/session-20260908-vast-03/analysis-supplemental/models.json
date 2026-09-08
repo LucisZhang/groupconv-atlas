@@ -1,0 +1,1652 @@
+{
+  "kind": "models",
+  "assessment": "AUDITED_DESCRIPTIVE",
+  "planned_units": 72,
+  "execution_counts": {
+    "PASS": 36,
+    "UNSUPPORTED": 28,
+    "NOT_RUN": 8
+  },
+  "units": [
+    {
+      "unit": "gc_c38ac171b7ce4e39/k0",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          13.329599890857935,
+          13.351999875158072,
+          12.54720026627183,
+          12.507200194522738,
+          12.572800135239959
+        ],
+        "t_api_us": [
+          13.722249999999999,
+          13.761600000000001,
+          13.65775,
+          13.741,
+          13.442900000000002
+        ],
+        "t_host_feed_us": [
+          11.5726,
+          11.7528,
+          12.3743,
+          12.47395,
+          12.1631
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 12.572800135239959,
+        "t_api_us": 13.722249999999999,
+        "t_host_feed_us": 12.1631
+      }
+    },
+    {
+      "unit": "gc_c38ac171b7ce4e39/k1",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          9.06080026179552,
+          9.06320025678724,
+          8.518400089815259,
+          8.51680007763207,
+          8.531200047582388
+        ],
+        "t_api_us": [
+          11.969674999999999,
+          12.003,
+          12.349775000000001,
+          12.8126,
+          12.550899999999999
+        ],
+        "t_host_feed_us": [
+          11.506525,
+          11.533025,
+          11.910900000000002,
+          12.374025,
+          12.113624999999999
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 8.531200047582388,
+        "t_api_us": 12.349775000000001,
+        "t_host_feed_us": 11.910900000000002
+      }
+    },
+    {
+      "unit": "gc_c38ac171b7ce4e39/k2",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          7.936799991875887,
+          7.940000016242266,
+          7.443200063426048,
+          7.4488000478595495,
+          7.467200048267841
+        ],
+        "t_api_us": [
+          11.942074999999999,
+          12.015425,
+          12.620825,
+          12.76785,
+          11.975375
+        ],
+        "t_host_feed_us": [
+          11.528500000000001,
+          11.60785,
+          12.23555,
+          12.3812,
+          11.592625
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 7.467200048267841,
+        "t_api_us": 12.015425,
+        "t_host_feed_us": 11.60785
+      }
+    },
+    {
+      "unit": "gc_c38ac171b7ce4e39/k3",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          5.211999919265509,
+          5.216799944173545,
+          5.250399955548346,
+          4.9015999073162675,
+          4.895199928432703
+        ],
+        "t_api_us": [
+          11.6848,
+          11.801575,
+          11.778775,
+          12.4299,
+          11.83945
+        ],
+        "t_host_feed_us": [
+          11.3871,
+          11.527999999999999,
+          11.505424999999999,
+          12.1719,
+          11.5837
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 5.211999919265509,
+        "t_api_us": 11.801575,
+        "t_host_feed_us": 11.527999999999999
+      }
+    },
+    {
+      "unit": "gc_c38ac171b7ce4e39/torch_cuda_default",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          6.9176000892184675,
+          6.906400097068399,
+          6.908000074326992,
+          6.506400147918612,
+          6.506400147918612
+        ],
+        "t_api_us": [
+          6.25165,
+          6.2538,
+          6.2593499999999995,
+          5.843475,
+          5.882325
+        ],
+        "t_host_feed_us": [
+          4.461225000000001,
+          4.472300000000001,
+          4.46935,
+          5.00525,
+          4.930025
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 6.906400097068399,
+        "t_api_us": 6.25165,
+        "t_host_feed_us": 4.472300000000001
+      }
+    },
+    {
+      "unit": "gc_c38ac171b7ce4e39/torch_cuda_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          6.901600083801895,
+          6.875200115609914,
+          6.506400101352483,
+          6.5072000958025455,
+          6.600800110027194
+        ],
+        "t_api_us": [
+          6.245225,
+          6.216875,
+          5.82375,
+          5.814500000000001,
+          5.879
+        ],
+        "t_host_feed_us": [
+          4.398975,
+          4.694,
+          4.940474999999999,
+          4.690225,
+          4.39775
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 6.600800110027194,
+        "t_api_us": 5.879,
+        "t_host_feed_us": 4.690225
+      }
+    },
+    {
+      "unit": "gc_eee1abbf8749c762/k0",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          10.239999741315842,
+          10.239999741315842,
+          10.225599771365523,
+          10.222399793565273,
+          10.230399761348963
+        ],
+        "t_api_us": [
+          13.4478,
+          12.969999999999999,
+          12.925749999999999,
+          12.916,
+          12.9422
+        ],
+        "t_host_feed_us": [
+          12.3948,
+          11.931799999999999,
+          11.88045,
+          11.86665,
+          11.8903
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 10.230399761348963,
+        "t_api_us": 12.9422,
+        "t_host_feed_us": 11.8903
+      }
+    },
+    {
+      "unit": "gc_eee1abbf8749c762/k1",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_eee1abbf8749c762/k2",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_eee1abbf8749c762/k3",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_eee1abbf8749c762/torch_cuda_default",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          5.927200126461685,
+          5.9056001249700785,
+          5.919200158677995,
+          5.9456001268699765,
+          5.911200121045113
+        ],
+        "t_api_us": [
+          5.313825,
+          5.25395,
+          5.275475,
+          5.199175,
+          5.219100000000001
+        ],
+        "t_host_feed_us": [
+          4.692975000000001,
+          4.746625,
+          4.742775,
+          4.529475,
+          4.548450000000001
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 5.919200158677995,
+        "t_api_us": 5.25395,
+        "t_host_feed_us": 4.692975000000001
+      }
+    },
+    {
+      "unit": "gc_eee1abbf8749c762/torch_cuda_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          5.891368491575122,
+          5.877894851820249,
+          5.89978960832875,
+          5.882947448346959,
+          5.882105361180086
+        ],
+        "t_api_us": [
+          5.264526315789473,
+          5.260657894736842,
+          5.230236842105263,
+          5.218026315789473,
+          5.160894736842105
+        ],
+        "t_host_feed_us": [
+          4.7842631578947366,
+          4.487868421052632,
+          4.383026315789474,
+          4.386078947368421,
+          4.3391052631578955
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 5.882947448346959,
+        "t_api_us": 5.230236842105263,
+        "t_host_feed_us": 4.386078947368421
+      }
+    },
+    {
+      "unit": "gc_2cfd9411e9d22559/k0",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          43.095999862998724,
+          40.70799890905619,
+          40.56999902240932,
+          40.545999305322766,
+          40.733999107033014
+        ],
+        "t_api_us": [
+          44.101124999999996,
+          41.723125,
+          41.555,
+          41.571124999999995,
+          41.700625
+        ],
+        "t_host_feed_us": [
+          12.232,
+          12.223125,
+          11.93575,
+          12.2011875,
+          12.04875
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 40.70799890905619,
+        "t_api_us": 41.700625,
+        "t_host_feed_us": 12.2011875
+      }
+    },
+    {
+      "unit": "gc_2cfd9411e9d22559/k1",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          26.789646924418562,
+          25.216940954765853,
+          25.216940954765853,
+          25.23482322473736,
+          25.276235085638127
+        ],
+        "t_api_us": [
+          26.65729411764706,
+          25.12570588235294,
+          25.111735294117643,
+          25.11217647058823,
+          25.186735294117646
+        ],
+        "t_host_feed_us": [
+          12.11844117647059,
+          12.148735294117646,
+          11.803588235294118,
+          11.948176470588235,
+          11.825911764705882
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 25.23482322473736,
+        "t_api_us": 25.12570588235294,
+        "t_host_feed_us": 11.948176470588235
+      }
+    },
+    {
+      "unit": "gc_2cfd9411e9d22559/k2",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          21.91600005608052,
+          20.5369996256195,
+          20.65999968908727,
+          20.67799959331751,
+          20.657999673858285
+        ],
+        "t_api_us": [
+          21.818375,
+          20.515,
+          20.57996875,
+          20.59278125,
+          20.59609375
+        ],
+        "t_host_feed_us": [
+          11.91453125,
+          12.175281250000001,
+          11.813812500000001,
+          11.90459375,
+          11.93621875
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 20.65999968908727,
+        "t_api_us": 20.59278125,
+        "t_host_feed_us": 11.91453125
+      }
+    },
+    {
+      "unit": "gc_2cfd9411e9d22559/k3",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          11.053599999286234,
+          10.415999800898135,
+          10.412799823097885,
+          10.411999840289354,
+          10.46799982432276
+        ],
+        "t_api_us": [
+          12.627749999999999,
+          12.431175,
+          12.27615,
+          12.5551,
+          12.2776
+        ],
+        "t_host_feed_us": [
+          12.065249999999999,
+          11.905075,
+          11.742975000000001,
+          12.0167,
+          11.740625
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 10.415999800898135,
+        "t_api_us": 12.431175,
+        "t_host_feed_us": 11.905075
+      }
+    },
+    {
+      "unit": "gc_2cfd9411e9d22559/torch_cuda_default",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          18.348800484091043,
+          17.32400027103722,
+          17.263200227171183,
+          17.267200257629156,
+          17.241600155830383
+        ],
+        "t_api_us": [
+          17.689625,
+          16.584400000000002,
+          16.6214,
+          16.617975,
+          16.649499999999996
+        ],
+        "t_host_feed_us": [
+          4.716025,
+          4.755475000000001,
+          4.4597999999999995,
+          4.462350000000001,
+          4.42445
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 17.267200257629156,
+        "t_api_us": 16.6214,
+        "t_host_feed_us": 4.462350000000001
+      }
+    },
+    {
+      "unit": "gc_2cfd9411e9d22559/torch_cuda_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          18.412000557873398,
+          17.38700026180595,
+          17.291000171098858,
+          17.375000228639692,
+          17.35000021290034
+        ],
+        "t_api_us": [
+          17.77709375,
+          16.70375,
+          16.64871875,
+          16.70134375,
+          16.7006875
+        ],
+        "t_host_feed_us": [
+          4.797750000000001,
+          4.7947500000000005,
+          4.744,
+          4.5080937500000005,
+          4.52921875
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 17.375000228639692,
+        "t_api_us": 16.70134375,
+        "t_host_feed_us": 4.744
+      }
+    },
+    {
+      "unit": "gc_2d9927cafa1321d0/k0",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          29.28177836454577,
+          29.278222678436173,
+          29.29244480199284,
+          27.64444446398152,
+          27.68888903988732
+        ],
+        "t_api_us": [
+          30.123833333333337,
+          30.06711111111111,
+          30.054111111111112,
+          28.277,
+          28.4135
+        ],
+        "t_host_feed_us": [
+          12.035833333333333,
+          11.894666666666666,
+          11.909055555555556,
+          11.901166666666668,
+          11.88988888888889
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 29.278222678436173,
+        "t_api_us": 30.054111111111112,
+        "t_host_feed_us": 11.901166666666668
+      }
+    },
+    {
+      "unit": "gc_2d9927cafa1321d0/k1",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_2d9927cafa1321d0/k2",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_2d9927cafa1321d0/k3",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_2d9927cafa1321d0/torch_cuda_default",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          14.236800139769912,
+          14.212000137194991,
+          14.21839997638017,
+          13.287199917249382,
+          13.376799947582185
+        ],
+        "t_api_us": [
+          13.464175000000001,
+          13.433325,
+          13.4465,
+          12.538825,
+          12.614175
+        ],
+        "t_host_feed_us": [
+          4.557575,
+          4.767575,
+          4.5395,
+          4.532975,
+          4.47545
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 14.212000137194991,
+        "t_api_us": 13.433325,
+        "t_host_feed_us": 4.5395
+      }
+    },
+    {
+      "unit": "gc_2d9927cafa1321d0/torch_cuda_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          14.27400013199076,
+          14.229000051273033,
+          14.25300003029406,
+          13.826999958837405,
+          13.38599988957867
+        ],
+        "t_api_us": [
+          13.51571875,
+          13.49603125,
+          13.4998125,
+          12.84603125,
+          12.6184375
+        ],
+        "t_host_feed_us": [
+          4.4644375,
+          4.385468749999999,
+          4.64925,
+          4.401875,
+          4.41075
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 14.229000051273033,
+        "t_api_us": 13.49603125,
+        "t_host_feed_us": 4.41075
+      }
+    },
+    {
+      "unit": "gc_61260c5c0a373f9d/k0",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          29.246222745213245,
+          27.44177770283487,
+          27.413333352241253,
+          27.507555567555958,
+          27.516444420648945
+        ],
+        "t_api_us": [
+          30.053166666666666,
+          28.25877777777778,
+          28.187555555555555,
+          28.287555555555556,
+          28.464333333333332
+        ],
+        "t_host_feed_us": [
+          12.613833333333334,
+          12.772166666666667,
+          12.625611111111112,
+          12.659,
+          13.31561111111111
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 27.507555567555958,
+        "t_api_us": 28.287555555555556,
+        "t_host_feed_us": 12.659
+      }
+    },
+    {
+      "unit": "gc_61260c5c0a373f9d/k1",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          11.232800083234906,
+          10.530399857088923,
+          10.572799877263606,
+          10.551199875772,
+          10.545599879696965
+        ],
+        "t_api_us": [
+          12.982300000000002,
+          12.980450000000001,
+          12.99555,
+          12.999625000000002,
+          12.942049999999998
+        ],
+        "t_host_feed_us": [
+          12.404225,
+          12.440375,
+          12.451175,
+          12.451825,
+          12.40465
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 10.551199875772,
+        "t_api_us": 12.982300000000002,
+        "t_host_feed_us": 12.440375
+      }
+    },
+    {
+      "unit": "gc_61260c5c0a373f9d/k2",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          12.804000126197934,
+          12.806400074623525,
+          12.07040031440556,
+          12.019200320355594,
+          12.06160036381334
+        ],
+        "t_api_us": [
+          13.061225,
+          13.031075000000001,
+          13.222175,
+          13.038725,
+          13.06675
+        ],
+        "t_host_feed_us": [
+          12.40525,
+          12.371425,
+          12.6006,
+          12.421625,
+          12.445975
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 12.07040031440556,
+        "t_api_us": 13.061225,
+        "t_host_feed_us": 12.421625
+      }
+    },
+    {
+      "unit": "gc_61260c5c0a373f9d/k3",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          8.123999962117523,
+          8.107199985533953,
+          7.621600024867803,
+          7.651200040709227,
+          7.640800031367689
+        ],
+        "t_api_us": [
+          12.870550000000001,
+          12.82995,
+          12.8078,
+          12.827925,
+          13.087575000000001
+        ],
+        "t_host_feed_us": [
+          12.443475,
+          12.406099999999999,
+          12.396825,
+          12.433175,
+          12.68065
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 7.651200040709227,
+        "t_api_us": 12.82995,
+        "t_host_feed_us": 12.433175
+      }
+    },
+    {
+      "unit": "gc_61260c5c0a373f9d/torch_cuda_default",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          11.940000276081264,
+          11.920800316147506,
+          11.257600062526762,
+          11.259200028143823,
+          11.250400100834668
+        ],
+        "t_api_us": [
+          11.436425,
+          11.420549999999999,
+          10.734075,
+          10.723275000000001,
+          10.7756
+        ],
+        "t_host_feed_us": [
+          5.836675,
+          6.206524999999999,
+          6.1872,
+          6.3657,
+          6.2090250000000005
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 11.259200028143823,
+        "t_api_us": 10.7756,
+        "t_host_feed_us": 6.206524999999999
+      }
+    },
+    {
+      "unit": "gc_61260c5c0a373f9d/torch_cuda_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          11.9258184409277,
+          11.266909158703957,
+          11.297454591840506,
+          11.2174546176737,
+          11.290181893855333
+        ],
+        "t_api_us": [
+          11.6385,
+          10.91240909090909,
+          10.957999999999998,
+          10.918,
+          10.989
+        ],
+        "t_host_feed_us": [
+          5.916090909090909,
+          6.171227272727272,
+          6.171772727272726,
+          6.298181818181818,
+          6.237590909090909
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 11.290181893855333,
+        "t_api_us": 10.957999999999998,
+        "t_host_feed_us": 6.171772727272726
+      }
+    },
+    {
+      "unit": "gc_18362726de254972/k0",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          29.450000496581197,
+          29.39000038895756,
+          29.388000490143895,
+          29.440000653266907,
+          29.426000546664
+        ],
+        "t_api_us": [
+          30.5318125,
+          30.494625,
+          30.47325,
+          30.5336875,
+          30.4393125
+        ],
+        "t_host_feed_us": [
+          12.663625,
+          12.562000000000001,
+          12.5478125,
+          12.59975,
+          12.5655625
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 29.426000546664,
+        "t_api_us": 30.494625,
+        "t_host_feed_us": 12.5655625
+      }
+    },
+    {
+      "unit": "gc_18362726de254972/k1",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_18362726de254972/k2",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_18362726de254972/k3",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_18362726de254972/torch_cuda_default",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          17.903200443834066,
+          17.881600419059396,
+          17.88240042515099,
+          17.890400299802423,
+          17.877600342035294
+        ],
+        "t_api_us": [
+          17.3886,
+          17.3646,
+          17.363675,
+          17.366300000000003,
+          17.369975
+        ],
+        "t_host_feed_us": [
+          5.9833,
+          5.981725000000001,
+          5.900375,
+          5.860975,
+          5.86065
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 17.88240042515099,
+        "t_api_us": 17.366300000000003,
+        "t_host_feed_us": 5.900375
+      }
+    },
+    {
+      "unit": "gc_18362726de254972/torch_cuda_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          17.86080040037632,
+          17.905600368976593,
+          17.924800515174866,
+          17.92640034109354,
+          17.891200352460146
+        ],
+        "t_api_us": [
+          17.72885,
+          17.72875,
+          17.7166,
+          17.733600000000003,
+          17.70095
+        ],
+        "t_host_feed_us": [
+          6.524000000000001,
+          6.1265,
+          6.3637999999999995,
+          6.3449,
+          6.30745
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 17.905600368976593,
+        "t_api_us": 17.72875,
+        "t_host_feed_us": 6.3449
+      }
+    },
+    {
+      "unit": "gc_e7ffe082dbb95bd9/k0",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          98.905598372221,
+          98.85439947247505,
+          94.00960132479668,
+          96.06720209121704,
+          93.859201669693
+        ],
+        "t_api_us": [
+          101.3669,
+          101.34479999999999,
+          96.5234,
+          98.541,
+          96.3911
+        ],
+        "t_host_feed_us": [
+          12.9755,
+          13.0213,
+          13.0291,
+          12.95,
+          13.1046
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 96.06720209121704,
+        "t_api_us": 98.541,
+        "t_host_feed_us": 13.0213
+      }
+    },
+    {
+      "unit": "gc_e7ffe082dbb95bd9/k1",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          33.5797334710757,
+          33.4346666932106,
+          32.32426643371582,
+          32.94186666607857,
+          32.33066648244858
+        ],
+        "t_api_us": [
+          33.6629,
+          33.59053333333333,
+          32.7884,
+          33.087133333333334,
+          32.71483333333333
+        ],
+        "t_host_feed_us": [
+          12.570500000000001,
+          12.503566666666668,
+          12.559333333333335,
+          12.5341,
+          12.5587
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 32.94186666607857,
+        "t_api_us": 33.087133333333334,
+        "t_host_feed_us": 12.5587
+      }
+    },
+    {
+      "unit": "gc_e7ffe082dbb95bd9/k2",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          38.89199858531356,
+          38.89599861577153,
+          38.85866530860464,
+          37.989334513743714,
+          36.6693342414995
+        ],
+        "t_api_us": [
+          39.23941666666667,
+          39.22691666666667,
+          39.27854166666667,
+          38.364999999999995,
+          37.22425
+        ],
+        "t_host_feed_us": [
+          12.396166666666666,
+          12.477875000000001,
+          12.605083333333333,
+          12.587083333333332,
+          12.543708333333333
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 38.85866530860464,
+        "t_api_us": 39.22691666666667,
+        "t_host_feed_us": 12.543708333333333
+      }
+    },
+    {
+      "unit": "gc_e7ffe082dbb95bd9/k3",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          18.887999979779124,
+          18.811200046911836,
+          18.36000047624111,
+          18.887999979779124,
+          17.89600048214197
+        ],
+        "t_api_us": [
+          18.6092,
+          18.5609,
+          18.0571,
+          18.5604,
+          17.71725
+        ],
+        "t_host_feed_us": [
+          12.25395,
+          12.3896,
+          12.437000000000001,
+          12.323174999999999,
+          12.479849999999999
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 18.811200046911836,
+        "t_api_us": 18.5604,
+        "t_host_feed_us": 12.3896
+      }
+    },
+    {
+      "unit": "gc_e7ffe082dbb95bd9/torch_cuda_default",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          33.73647075803841,
+          33.689412014449346,
+          32.780235304551965,
+          31.73082310925512,
+          33.70729439398822
+        ],
+        "t_api_us": [
+          33.26582352941176,
+          33.26008823529412,
+          32.326617647058825,
+          31.295147058823527,
+          33.348470588235294
+        ],
+        "t_host_feed_us": [
+          5.962235294117647,
+          5.915588235294118,
+          5.939235294117648,
+          5.8987647058823525,
+          5.901941176470588
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 33.689412014449346,
+        "t_api_us": 33.26008823529412,
+        "t_host_feed_us": 5.915588235294118
+      }
+    },
+    {
+      "unit": "gc_e7ffe082dbb95bd9/torch_cuda_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          33.76355580985546,
+          33.54488892687692,
+          31.55555513997873,
+          33.875555627875855,
+          32.19199987749259
+        ],
+        "t_api_us": [
+          33.68388888888889,
+          33.632111111111115,
+          31.643500000000003,
+          33.92111111111111,
+          32.18405555555556
+        ],
+        "t_host_feed_us": [
+          6.381277777777777,
+          6.347722222222222,
+          6.383333333333333,
+          6.035166666666667,
+          6.390444444444444
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 33.54488892687692,
+        "t_api_us": 33.632111111111115,
+        "t_host_feed_us": 6.381277777777777
+      }
+    },
+    {
+      "unit": "gc_7e8fe6fcfca2572f/k0",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          92.58240163326263,
+          86.70400008559227,
+          86.58239915966988,
+          87.10720017552376,
+          87.11360022425652
+        ],
+        "t_api_us": [
+          95.0094,
+          89.0859,
+          89.04599999999999,
+          89.5572,
+          89.6139
+        ],
+        "t_host_feed_us": [
+          13.0548,
+          13.055,
+          13.0225,
+          13.2056,
+          12.994799999999998
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 87.10720017552376,
+        "t_api_us": 89.5572,
+        "t_host_feed_us": 13.0548
+      }
+    },
+    {
+      "unit": "gc_7e8fe6fcfca2572f/k1",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_7e8fe6fcfca2572f/k2",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_7e8fe6fcfca2572f/k3",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "Optimized CUDA kernels require B geometry"
+    },
+    {
+      "unit": "gc_7e8fe6fcfca2572f/torch_cuda_default",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          28.86545497246764,
+          28.842182067984886,
+          27.213090946051206,
+          27.24072726612741,
+          27.20000002194535
+        ],
+        "t_api_us": [
+          53.974227272727276,
+          53.12118181818181,
+          52.6525,
+          52.794363636363634,
+          52.70645454545455
+        ],
+        "t_host_feed_us": [
+          53.49490909090909,
+          52.805409090909095,
+          52.42981818181818,
+          52.529318181818184,
+          52.45422727272728
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 27.24072726612741,
+        "t_api_us": 52.794363636363634,
+        "t_host_feed_us": 52.529318181818184
+      }
+    },
+    {
+      "unit": "gc_7e8fe6fcfca2572f/torch_cuda_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          28.725333511829376,
+          28.725333201388516,
+          27.280000038444996,
+          27.114666532725096,
+          27.039999763170876
+        ],
+        "t_api_us": [
+          56.468,
+          54.70041666666667,
+          54.657,
+          54.309250000000006,
+          54.36475
+        ],
+        "t_host_feed_us": [
+          56.011,
+          54.22258333333333,
+          54.19433333333333,
+          53.92483333333334,
+          53.89975
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 27.280000038444996,
+        "t_api_us": 54.657,
+        "t_host_feed_us": 54.19433333333333
+      }
+    },
+    {
+      "unit": "conv2d_ae226e2ce2ccd048/k0",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_ae226e2ce2ccd048/k1",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_ae226e2ce2ccd048/k2",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_ae226e2ce2ccd048/k3",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_ae226e2ce2ccd048/torch_cuda_default",
+      "execution_status": "NOT_RUN",
+      "assessment": "NOT_ASSESSED",
+      "reason": "baseline not measured: original layer is outside native bias contract"
+    },
+    {
+      "unit": "conv2d_ae226e2ce2ccd048/torch_cuda_tuned",
+      "execution_status": "NOT_RUN",
+      "assessment": "NOT_ASSESSED",
+      "reason": "baseline not measured: original layer is outside native bias contract"
+    },
+    {
+      "unit": "conv2d_83aecb22d35217c6/k0",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_83aecb22d35217c6/k1",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_83aecb22d35217c6/k2",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_83aecb22d35217c6/k3",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_83aecb22d35217c6/torch_cuda_default",
+      "execution_status": "NOT_RUN",
+      "assessment": "NOT_ASSESSED",
+      "reason": "baseline not measured: original layer is outside native bias contract"
+    },
+    {
+      "unit": "conv2d_83aecb22d35217c6/torch_cuda_tuned",
+      "execution_status": "NOT_RUN",
+      "assessment": "NOT_ASSESSED",
+      "reason": "baseline not measured: original layer is outside native bias contract"
+    },
+    {
+      "unit": "conv2d_2e9290c975498827/k0",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_2e9290c975498827/k1",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_2e9290c975498827/k2",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_2e9290c975498827/k3",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_2e9290c975498827/torch_cuda_default",
+      "execution_status": "NOT_RUN",
+      "assessment": "NOT_ASSESSED",
+      "reason": "baseline not measured: original layer is outside native bias contract"
+    },
+    {
+      "unit": "conv2d_2e9290c975498827/torch_cuda_tuned",
+      "execution_status": "NOT_RUN",
+      "assessment": "NOT_ASSESSED",
+      "reason": "baseline not measured: original layer is outside native bias contract"
+    },
+    {
+      "unit": "conv2d_ef8885ad55a08294/k0",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_ef8885ad55a08294/k1",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_ef8885ad55a08294/k2",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_ef8885ad55a08294/k3",
+      "execution_status": "UNSUPPORTED",
+      "assessment": "NOT_ASSESSED",
+      "reason": "bias not implemented"
+    },
+    {
+      "unit": "conv2d_ef8885ad55a08294/torch_cuda_default",
+      "execution_status": "NOT_RUN",
+      "assessment": "NOT_ASSESSED",
+      "reason": "baseline not measured: original layer is outside native bias contract"
+    },
+    {
+      "unit": "conv2d_ef8885ad55a08294/torch_cuda_tuned",
+      "execution_status": "NOT_RUN",
+      "assessment": "NOT_ASSESSED",
+      "reason": "baseline not measured: original layer is outside native bias contract"
+    }
+  ],
+  "comparisons": [
+    {
+      "baseline": "gc_c38ac171b7ce4e39/torch_cuda_tuned",
+      "candidate": "gc_c38ac171b7ce4e39/k3",
+      "metric": "t_device_op_graph_us",
+      "ratio_of_median_batch_medians": 1.2664620514724412,
+      "batches": 5,
+      "classification": "UNCERTAIN",
+      "ci95": null,
+      "inference_scope": "descriptive; no independent-session claim",
+      "paired": false
+    },
+    {
+      "baseline": "gc_c38ac171b7ce4e39/torch_cuda_tuned",
+      "candidate": "gc_c38ac171b7ce4e39/k3",
+      "metric": "t_api_us",
+      "ratio_of_median_batch_medians": 0.49815384810925656,
+      "batches": 5,
+      "classification": "UNCERTAIN",
+      "ci95": null,
+      "inference_scope": "descriptive; no independent-session claim",
+      "paired": false
+    },
+    {
+      "baseline": "gc_eee1abbf8749c762/torch_cuda_tuned",
+      "candidate": "gc_eee1abbf8749c762/k3",
+      "assessment": "NOT_ASSESSED"
+    },
+    {
+      "baseline": "gc_2cfd9411e9d22559/torch_cuda_tuned",
+      "candidate": "gc_2cfd9411e9d22559/k3",
+      "metric": "t_device_op_graph_us",
+      "ratio_of_median_batch_medians": 1.6681068126692464,
+      "batches": 5,
+      "classification": "UNCERTAIN",
+      "ci95": null,
+      "inference_scope": "descriptive; no independent-session claim",
+      "paired": false
+    },
+    {
+      "baseline": "gc_2cfd9411e9d22559/torch_cuda_tuned",
+      "candidate": "gc_2cfd9411e9d22559/k3",
+      "metric": "t_api_us",
+      "ratio_of_median_batch_medians": 1.343504837636024,
+      "batches": 5,
+      "classification": "UNCERTAIN",
+      "ci95": null,
+      "inference_scope": "descriptive; no independent-session claim",
+      "paired": false
+    },
+    {
+      "baseline": "gc_2d9927cafa1321d0/torch_cuda_tuned",
+      "candidate": "gc_2d9927cafa1321d0/k3",
+      "assessment": "NOT_ASSESSED"
+    },
+    {
+      "baseline": "gc_61260c5c0a373f9d/torch_cuda_tuned",
+      "candidate": "gc_61260c5c0a373f9d/k3",
+      "metric": "t_device_op_graph_us",
+      "ratio_of_median_batch_medians": 1.475609294461577,
+      "batches": 5,
+      "classification": "UNCERTAIN",
+      "ci95": null,
+      "inference_scope": "descriptive; no independent-session claim",
+      "paired": false
+    },
+    {
+      "baseline": "gc_61260c5c0a373f9d/torch_cuda_tuned",
+      "candidate": "gc_61260c5c0a373f9d/k3",
+      "metric": "t_api_us",
+      "ratio_of_median_batch_medians": 0.8540953004493391,
+      "batches": 5,
+      "classification": "UNCERTAIN",
+      "ci95": null,
+      "inference_scope": "descriptive; no independent-session claim",
+      "paired": false
+    },
+    {
+      "baseline": "gc_18362726de254972/torch_cuda_tuned",
+      "candidate": "gc_18362726de254972/k3",
+      "assessment": "NOT_ASSESSED"
+    },
+    {
+      "baseline": "gc_e7ffe082dbb95bd9/torch_cuda_tuned",
+      "candidate": "gc_e7ffe082dbb95bd9/k3",
+      "metric": "t_device_op_graph_us",
+      "ratio_of_median_batch_medians": 1.7832402421547722,
+      "batches": 5,
+      "classification": "UNCERTAIN",
+      "ci95": null,
+      "inference_scope": "descriptive; no independent-session claim",
+      "paired": false
+    },
+    {
+      "baseline": "gc_e7ffe082dbb95bd9/torch_cuda_tuned",
+      "candidate": "gc_e7ffe082dbb95bd9/k3",
+      "metric": "t_api_us",
+      "ratio_of_median_batch_medians": 1.8120358996094434,
+      "batches": 5,
+      "classification": "UNCERTAIN",
+      "ci95": null,
+      "inference_scope": "descriptive; no independent-session claim",
+      "paired": false
+    },
+    {
+      "baseline": "gc_7e8fe6fcfca2572f/torch_cuda_tuned",
+      "candidate": "gc_7e8fe6fcfca2572f/k3",
+      "assessment": "NOT_ASSESSED"
+    },
+    {
+      "baseline": "conv2d_ae226e2ce2ccd048/torch_cuda_tuned",
+      "candidate": "conv2d_ae226e2ce2ccd048/k3",
+      "assessment": "NOT_ASSESSED"
+    },
+    {
+      "baseline": "conv2d_83aecb22d35217c6/torch_cuda_tuned",
+      "candidate": "conv2d_83aecb22d35217c6/k3",
+      "assessment": "NOT_ASSESSED"
+    },
+    {
+      "baseline": "conv2d_2e9290c975498827/torch_cuda_tuned",
+      "candidate": "conv2d_2e9290c975498827/k3",
+      "assessment": "NOT_ASSESSED"
+    },
+    {
+      "baseline": "conv2d_ef8885ad55a08294/torch_cuda_tuned",
+      "candidate": "conv2d_ef8885ad55a08294/k3",
+      "assessment": "NOT_ASSESSED"
+    }
+  ],
+  "setup_conversion_profile_separate": {
+    "gc_c38ac171b7ce4e39/k0/first": 236.147,
+    "gc_c38ac171b7ce4e39/k1/first": 57.491,
+    "gc_c38ac171b7ce4e39/k2/first": 50.332,
+    "gc_c38ac171b7ce4e39/k3/first": 50.973,
+    "gc_c38ac171b7ce4e39/torch_cuda_default/first": 1201.485,
+    "gc_c38ac171b7ce4e39/torch_cuda_tuned/first": 1229.778,
+    "gc_eee1abbf8749c762/k0/first": 236.126,
+    "gc_eee1abbf8749c762/k1/first": null,
+    "gc_eee1abbf8749c762/k2/first": null,
+    "gc_eee1abbf8749c762/k3/first": null,
+    "gc_eee1abbf8749c762/torch_cuda_default/first": 1368.275,
+    "gc_eee1abbf8749c762/torch_cuda_tuned/first": 1333.092,
+    "gc_2cfd9411e9d22559/k0/first": 279.737,
+    "gc_2cfd9411e9d22559/k1/first": 67.267,
+    "gc_2cfd9411e9d22559/k2/first": 60.692,
+    "gc_2cfd9411e9d22559/k3/first": 62.356,
+    "gc_2cfd9411e9d22559/torch_cuda_default/first": 1414.956,
+    "gc_2cfd9411e9d22559/torch_cuda_tuned/first": 1378.691,
+    "gc_2d9927cafa1321d0/k0/first": 276.7,
+    "gc_2d9927cafa1321d0/k1/first": null,
+    "gc_2d9927cafa1321d0/k2/first": null,
+    "gc_2d9927cafa1321d0/k3/first": null,
+    "gc_2d9927cafa1321d0/torch_cuda_default/first": 1422.829,
+    "gc_2d9927cafa1321d0/torch_cuda_tuned/first": 1450.897,
+    "gc_61260c5c0a373f9d/k0/first": 260.967,
+    "gc_61260c5c0a373f9d/k1/first": 59.337,
+    "gc_61260c5c0a373f9d/k2/first": 55.126,
+    "gc_61260c5c0a373f9d/k3/first": 50.237,
+    "gc_61260c5c0a373f9d/torch_cuda_default/first": 51691.595,
+    "gc_61260c5c0a373f9d/torch_cuda_tuned/first": 80655.64,
+    "gc_18362726de254972/k0/first": 289.278,
+    "gc_18362726de254972/k1/first": null,
+    "gc_18362726de254972/k2/first": null,
+    "gc_18362726de254972/k3/first": null,
+    "gc_18362726de254972/torch_cuda_default/first": 45624.947,
+    "gc_18362726de254972/torch_cuda_tuned/first": 71819.298,
+    "gc_e7ffe082dbb95bd9/k0/first": 323.155,
+    "gc_e7ffe082dbb95bd9/k1/first": 74.763,
+    "gc_e7ffe082dbb95bd9/k2/first": 79.356,
+    "gc_e7ffe082dbb95bd9/k3/first": 60.371,
+    "gc_e7ffe082dbb95bd9/torch_cuda_default/first": 52341.669,
+    "gc_e7ffe082dbb95bd9/torch_cuda_tuned/first": 86323.873,
+    "gc_7e8fe6fcfca2572f/k0/first": 313.611,
+    "gc_7e8fe6fcfca2572f/k1/first": null,
+    "gc_7e8fe6fcfca2572f/k2/first": null,
+    "gc_7e8fe6fcfca2572f/k3/first": null,
+    "gc_7e8fe6fcfca2572f/torch_cuda_default/first": 45616.266,
+    "gc_7e8fe6fcfca2572f/torch_cuda_tuned/first": 74403.317,
+    "conv2d_ae226e2ce2ccd048/k0/first": null,
+    "conv2d_ae226e2ce2ccd048/k1/first": null,
+    "conv2d_ae226e2ce2ccd048/k2/first": null,
+    "conv2d_ae226e2ce2ccd048/k3/first": null,
+    "conv2d_ae226e2ce2ccd048/torch_cuda_default/first": null,
+    "conv2d_ae226e2ce2ccd048/torch_cuda_tuned/first": null,
+    "conv2d_83aecb22d35217c6/k0/first": null,
+    "conv2d_83aecb22d35217c6/k1/first": null,
+    "conv2d_83aecb22d35217c6/k2/first": null,
+    "conv2d_83aecb22d35217c6/k3/first": null,
+    "conv2d_83aecb22d35217c6/torch_cuda_default/first": null,
+    "conv2d_83aecb22d35217c6/torch_cuda_tuned/first": null,
+    "conv2d_2e9290c975498827/k0/first": null,
+    "conv2d_2e9290c975498827/k1/first": null,
+    "conv2d_2e9290c975498827/k2/first": null,
+    "conv2d_2e9290c975498827/k3/first": null,
+    "conv2d_2e9290c975498827/torch_cuda_default/first": null,
+    "conv2d_2e9290c975498827/torch_cuda_tuned/first": null,
+    "conv2d_ef8885ad55a08294/k0/first": null,
+    "conv2d_ef8885ad55a08294/k1/first": null,
+    "conv2d_ef8885ad55a08294/k2/first": null,
+    "conv2d_ef8885ad55a08294/k3/first": null,
+    "conv2d_ef8885ad55a08294/torch_cuda_default/first": null,
+    "conv2d_ef8885ad55a08294/torch_cuda_tuned/first": null
+  },
+  "context": [
+    "boundaries use fixed implementation order; models tuned baseline is subprocess-fed; no statistical pairing inferred from labels"
+  ],
+  "source_tree_sha256": "5b499cd77b1594e501fce8c8d457ec147ffe410ae5764fa6b1df1a4566934cbd",
+  "analysis_script_sha256": "50d22e5fed0f54d63247d29e478d56b90a3ef5db549aadd6d0e6ddf5c733cf3f",
+  "python_version": "3.14.4",
+  "input_artifacts_sha256": {
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/run-key.json": "5284f003d4f82d06726d9b98209f8dcab71aad0ac4a6f32b515007aac799e4fa",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/conv2d_2e9290c975498827.json": "69f1bb19fca632c06cb578b7f14eb25bfcdf27b0b19d8a137cb47a1399127f25",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/conv2d_83aecb22d35217c6.json": "b79319365db061c4f12ea347682b1ad8e4f2d250ee3972962dfff4a93aae4cab",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/conv2d_ae226e2ce2ccd048.json": "e257299df64446dfa7a489921a38e3600a3d0943eae626d7fbd53b6905f19dde",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/conv2d_ef8885ad55a08294.json": "bdda6e30ec7b0d6dc0d7a2c9d903295ce003ff41c647c171b7ad35be10787e07",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/gc_18362726de254972.json": "575a206e56e78aa7b39beb474ef8439e117e87dbc7b1686cf307580fcb1a0983",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/gc_2cfd9411e9d22559.json": "d35f8f06370ccc93cab0d2f166b9316e6a6bc284318c63a5fec386303762fc81",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/gc_2d9927cafa1321d0.json": "128a73533eebcfd15f36e2b48ca2fe7974856cf492537e801df02c368dfc6e05",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/gc_61260c5c0a373f9d.json": "6db0b3d377eb8324cca372379a8e365bf3e5f5cf93375a3a5e81531ee082a769",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/gc_7e8fe6fcfca2572f.json": "89531ad74427cc9f4cf846534b438d274e9a15250d38cce8bc30c3076ea67938",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/gc_c38ac171b7ce4e39.json": "e41c2bb07ed23be1fbfedd478e87ddf52108fc9c8e1bcc669c9ee9b9acc8bf6e",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/gc_e7ffe082dbb95bd9.json": "ba632576a7dd392eb30264d47b78a9dfc2fd1d0ca668b25253b4ec7466f88f92",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/shapes/gc_eee1abbf8749c762.json": "ebf322a5c9213071399beaf364af73386c54dd1f7dc30e2f572d95c341c2c3a1",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/models/model-shapes.json": "f0cfd98be7ad8ee61e90533d0f4410ddb691e42a348b157f98589c6b8b9efdf4",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/bootstrap/validation/correctness.json": "ca7e9774961b2f3ce44aa8e9a76954e9da61fc11ef1467ac1436cf26c7951b86"
+  },
+  "statistics": {
+    "estimator": "median(batch medians); baseline/candidate ratio",
+    "ci": "paired batch-index bootstrap only for verified randomized module blocks",
+    "bootstrap_draws": 10000,
+    "seed": 20260908,
+    "practical_margin": 1.05,
+    "minimum_batches_for_ci": 10
+  },
+  "plan_sha256": "9a8389214a08567cc9175f87c1900d95268eadcbe9817cc42f0d56de1c051cf7"
+}

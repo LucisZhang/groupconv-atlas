@@ -1,0 +1,384 @@
+{
+  "status": "PASS",
+  "measurements": {
+    "baseline": {
+      "samples": [
+        {
+          "sample": 0,
+          "block_graph_us": 59.20000001788139,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29405405912224486
+        },
+        {
+          "sample": 1,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 2,
+          "block_graph_us": 58.33600088953972,
+          "target_graph_us": 16.383999958634377,
+          "p": 0.2808557273176435
+        },
+        {
+          "sample": 3,
+          "block_graph_us": 59.07199904322624,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29469123420991045
+        },
+        {
+          "sample": 4,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 5,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 6,
+          "block_graph_us": 59.13599953055382,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.2943723018717354
+        },
+        {
+          "sample": 7,
+          "block_graph_us": 58.240000158548355,
+          "target_graph_us": 16.383999958634377,
+          "p": 0.28131867984257836
+        },
+        {
+          "sample": 8,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 9,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 16.383999958634377,
+          "p": 0.2807017482274906
+        },
+        {
+          "sample": 10,
+          "block_graph_us": 58.01599845290184,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.3000551704617656
+        },
+        {
+          "sample": 11,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 12,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 16.383999958634377,
+          "p": 0.2807017482274906
+        },
+        {
+          "sample": 13,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 14,
+          "block_graph_us": 59.167999774217606,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.2942130944382627
+        },
+        {
+          "sample": 15,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 16.383999958634377,
+          "p": 0.2807017482274906
+        },
+        {
+          "sample": 16,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 17,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 18,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 19,
+          "block_graph_us": 57.95200169086456,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.3003865232844779
+        },
+        {
+          "sample": 20,
+          "block_graph_us": 58.30400064587593,
+          "target_graph_us": 16.383999958634377,
+          "p": 0.2810098754311344
+        },
+        {
+          "sample": 21,
+          "block_graph_us": 58.20799991488457,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29906542624295757
+        },
+        {
+          "sample": 22,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 23,
+          "block_graph_us": 59.13599953055382,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.2943723018717354
+        },
+        {
+          "sample": 24,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 16.383999958634377,
+          "p": 0.2807017482274906
+        },
+        {
+          "sample": 25,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 26,
+          "block_graph_us": 58.30400064587593,
+          "target_graph_us": 16.767999157309532,
+          "p": 0.2875960306592717
+        },
+        {
+          "sample": 27,
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.29824561347522643
+        },
+        {
+          "sample": 28,
+          "block_graph_us": 57.95200169086456,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.3003865232844779
+        },
+        {
+          "sample": 29,
+          "block_graph_us": 58.30400064587593,
+          "target_graph_us": 17.40800030529499,
+          "p": 0.2985729986356661
+        }
+      ],
+      "block_graph_us": 58.36800113320351,
+      "target_graph_us": 17.40800030529499
+    },
+    "candidate": {
+      "samples": [
+        {
+          "sample": 0,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 11.264000087976456,
+          "p": 0.21568628010454266
+        },
+        {
+          "sample": 1,
+          "block_graph_us": 51.19999870657921,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.2
+        },
+        {
+          "sample": 2,
+          "block_graph_us": 51.19999870657921,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.2
+        },
+        {
+          "sample": 3,
+          "block_graph_us": 52.032001316547394,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.1968019580684336
+        },
+        {
+          "sample": 4,
+          "block_graph_us": 51.19999870657921,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.2
+        },
+        {
+          "sample": 5,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19607842997386432
+        },
+        {
+          "sample": 6,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19607842997386432
+        },
+        {
+          "sample": 7,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 11.264000087976456,
+          "p": 0.21568628010454266
+        },
+        {
+          "sample": 8,
+          "block_graph_us": 51.19999870657921,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.2
+        },
+        {
+          "sample": 9,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 11.264000087976456,
+          "p": 0.21568628010454266
+        },
+        {
+          "sample": 10,
+          "block_graph_us": 51.93600058555603,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.1971657352484646
+        },
+        {
+          "sample": 11,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19607842997386432
+        },
+        {
+          "sample": 12,
+          "block_graph_us": 51.90400034189224,
+          "target_graph_us": 10.33599954098463,
+          "p": 0.19913685790885644
+        },
+        {
+          "sample": 13,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19607842997386432
+        },
+        {
+          "sample": 14,
+          "block_graph_us": 52.15999856591225,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.1963190188430702
+        },
+        {
+          "sample": 15,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19607842997386432
+        },
+        {
+          "sample": 16,
+          "block_graph_us": 52.15999856591225,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.1963190188430702
+        },
+        {
+          "sample": 17,
+          "block_graph_us": 52.06400156021118,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19668099712761122
+        },
+        {
+          "sample": 18,
+          "block_graph_us": 52.06400156021118,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19668099712761122
+        },
+        {
+          "sample": 19,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 11.264000087976456,
+          "p": 0.21568628010454266
+        },
+        {
+          "sample": 20,
+          "block_graph_us": 52.000001072883606,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19692306788539057
+        },
+        {
+          "sample": 21,
+          "block_graph_us": 51.872000098228455,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19740900142513612
+        },
+        {
+          "sample": 22,
+          "block_graph_us": 52.000001072883606,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19692306788539057
+        },
+        {
+          "sample": 23,
+          "block_graph_us": 51.872000098228455,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19740900142513612
+        },
+        {
+          "sample": 24,
+          "block_graph_us": 51.19999870657921,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.2
+        },
+        {
+          "sample": 25,
+          "block_graph_us": 51.83999985456467,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19753085976164753
+        },
+        {
+          "sample": 26,
+          "block_graph_us": 51.19999870657921,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.2
+        },
+        {
+          "sample": 27,
+          "block_graph_us": 52.12799832224846,
+          "target_graph_us": 10.239999741315842,
+          "p": 0.19643953481607915
+        },
+        {
+          "sample": 28,
+          "block_graph_us": 51.19999870657921,
+          "target_graph_us": 11.264000087976456,
+          "p": 0.2200000072759578
+        },
+        {
+          "sample": 29,
+          "block_graph_us": 52.22399905323982,
+          "target_graph_us": 11.264000087976456,
+          "p": 0.21568628010454266
+        }
+      ],
+      "block_graph_us": 52.04800143837929,
+      "target_graph_us": 10.239999741315842
+    }
+  },
+  "p": 0.29824561347522643,
+  "s": 1.7000000727595779,
+  "predicted_block_speedup": 1.1400000094587448,
+  "observed_instrumented_block_speedup": 1.1214263664341964,
+  "boundary": "four external event nodes in one captured complete block, target bracketed by hooks; one same non-default stream",
+  "excluded_from_main_latency_samples": true,
+  "limitations": "instrumented estimate; graph event nodes may perturb scheduling; assumes other block work unchanged; not eager API or whole-model prediction"
+}

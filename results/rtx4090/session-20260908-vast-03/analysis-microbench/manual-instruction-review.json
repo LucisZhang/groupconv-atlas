@@ -1,0 +1,73 @@
+{
+  "status": "MANUAL_SEMANTIC_REVIEW_PASS",
+  "architecture": "sm_89",
+  "ptx_version": "8.7",
+  "scope": "saved microbench binary disassembly and frozen source only",
+  "artifact_sha256": {
+    "results/rtx4090/session-20260908-vast-03/triton-micro-evidence/results/microbench/sass.stdout.txt": "9d74c6589e1dfd902bc8361595b53b4d9528fffadef908bd6cf5ae0860121b24",
+    "results/rtx4090/session-20260908-vast-03/triton-micro-evidence/results/microbench/ptx.stdout.txt": "945f11160b0b34d71de66669023e8c600cc463605f6855cbd01196c511ea142c",
+    "results/rtx4090/session-20260908-vast-03/triton-micro-evidence/results/microbench/resources.stdout.txt": "fab12f1e63fd37163bc75d02fbe97ae29260e1397ca74eb0109c2d682a872121",
+    "results/rtx4090/session-20260908-vast-03/triton-micro-evidence/results/microbench/manifest.json": "741c5dac02a3adbdb3d18a1809b92ea4c48f29206099f83014230285b1ec9f3a",
+    "results/rtx4090/session-20260908-vast-03/triton-micro-evidence/build/cuda_microbench": "7052f675b6d573c986fe448406e668e6e5ec7cd7f730d00dd999475c29730c36",
+    ".remote/vast-resume-20260908/local-snapshot/csrc/cuda/microbench.cu": "8242bbe4412e26d94a407030fca6c5a90d47ad6cd3b282837031a3adc9b27b10"
+  },
+  "copy": {
+    "preserved": true,
+    "sass_load": "0x00e0 LDG.E R5, [R4.64]",
+    "sass_store": "0x0150 STG.E [R6.64], R5",
+    "loop": "0x0160 @!P0 BRA 0xa0, index increment gridDim.x*blockDim.x and 64-bit n comparison",
+    "work": "one 32-bit read plus one 32-bit write per element; logical work=n*8 bytes, not measured DRAM bytes"
+  },
+  "fma": {
+    "preserved_independent_chains": 8,
+    "accumulator_registers": {
+      "R11": 4,
+      "R13": 4,
+      "R15": 4,
+      "R17": 4,
+      "R9": 4,
+      "R7": 4,
+      "R5": 4,
+      "R3": 4
+    },
+    "main_loop": "0x02a0 decrements R6 by 4; 32 FFMA through 0x04b0; 0x04c0 branches to 0x02a0",
+    "remainder_loop": "0x04e0 decrements iterations modulo 4 by 1; eight FFMA; branch at 0x0580",
+    "actual_iterations": [
+      4096,
+      8192
+    ],
+    "remainder_iterations_for_measured_configs": 0,
+    "work_formula": "n * iterations * 8 FMA * 2 FLOPs; excludes input multiply, final 7 adds and address/control instructions",
+    "output": "seven FADD reductions then 0x0620 STG.E; every chain contributes"
+  },
+  "resources": {
+    "eight_fma_chains": {
+      "registers": 20,
+      "stack_bytes": 0,
+      "shared_bytes": 0,
+      "local_bytes": 0
+    },
+    "logical_copy": {
+      "registers": 12,
+      "stack_bytes": 0,
+      "shared_bytes": 0,
+      "local_bytes": 0
+    },
+    "initialize": {
+      "registers": 14,
+      "stack_bytes": 0,
+      "shared_bytes": 0,
+      "local_bytes": 0
+    },
+    "spill_observation": "resource LOCAL/STACK zero and no LDL/STL instructions in saved SASS; PTX virtual register counts are not hardware allocated registers"
+  },
+  "compute_work_formula_status": "SUPPORTED_BY_SELECTED_BINARY_REVIEW",
+  "sustained_compute_peak_status": "NOT_ESTABLISHED",
+  "dram_bandwidth_status": "PENDING_SEPARATE_COUNTER_CAPTURE_AUDIT",
+  "limitations": [
+    "Instruction inspection supports operation count, not saturation or a sustainable peak.",
+    "Five batches in one run, uncontrolled clocks, no independent-session stability proof.",
+    "Only first 16 outputs checked after warmup; formal timed samples not fully numerically validated.",
+    "Assembly extraction manifest binds supplied binary/hash; does not independently prove build provenance or execution exclusivity."
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "status": "PASS",
+  "all_cache_cubins_inspected": 114,
+  "holdout_explicit_ptx_count": 15,
+  "unique_ptx_cache_matches": 15,
+  "manifest_sha256": "2ed608b1c96e48564af36413ae7747008d41ca90f84be2ddf15412637a20890d",
+  "matches": [
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_78e99ae160f2dd60-b256-seed20260908.ptx",
+      "ptx_sha256": "e2533768c7143d1d549fb8877fd730bb759256bcad6091e4f225b77081ae9dc2",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/A2IBR6Y5VQAWGKRX4QEELG6VKJXZLSUAU5CCHM2L7BJCPRUQR2JQ",
+      "metadata_sha256": "c0c121779db50b2569ab40d70bc7f73ce8909c16d46f254c0dab3ee778b3a793",
+      "cubin_sha256": "498ce7ea6465858ee7d3bb68f08d17e78fe0fa0004cb038ae724fb084f70e0cb",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "aaf604e28a1582d84375bbbd9156045e094d3fa19bd6e1f8f6b1fbe503eb99c8",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_84efc2d9aa580e43-b256-seed20260908.ptx",
+      "ptx_sha256": "c402a6a72a64501bb576106c10ff8b09e59f329d76bd0eec63b80d5382f900ba",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/IQXI55PHGSHMH4BIF73IPMYWMFUL7P5ORAMLP6DC7OU2REPSQ63A",
+      "metadata_sha256": "9eb6e3550090720a7e511c794866e6d55e2fc6653ee69e28f859b7036f0aa0bb",
+      "cubin_sha256": "c8f417d3e300917794c881b0dd28af303ff1a7decfdac4b94fdc6eb74e3f108e",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "609e13b608c29b2547ce66f72885442b40522b468e2f158935b27baee3f1ec23",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_866eddd9507e8dc4-b256-seed20260908.ptx",
+      "ptx_sha256": "6d5400d8dcee1e11276b6db66746120f4ff97c9b66cc0d90f36055a9181a419c",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/VTNUAKXJGZTXMSPTURFC22R3YODSC6LI54VNWIDTBAXOZDZDMZKQ",
+      "metadata_sha256": "d92b418979307c4375e5edd024b96ed031e6fe13fba21fa2155ef30788582e40",
+      "cubin_sha256": "c5ef57df45b10048ceb6a461e9ee535ed2e25d07b143330bfe5eb8f34b419129",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "583dbe5774189f7de8f1eae41177b73bef63d6cff45de57574c7e36c98c6f879",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_89f7910f07a199fb-b256-seed20260908.ptx",
+      "ptx_sha256": "a3d41339dafceb23ac3e304f9f9b2a96c92e3bef76480cf1696f1c115c8468a8",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/ETKZDWQH6FGPRYISEWWGBNOBX2XOZQLKFCSQT5FAGFIQ5KTJJ7XQ",
+      "metadata_sha256": "9dc0532f5f91eb52aba4c08925a3603552d56721d29eef14ad5bf3239f277f67",
+      "cubin_sha256": "b4c6cbe339d880a2209e5f7638d5b6afc929c81deff96e5edc7de2b3ccaea4ce",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "3ffaa731ed0b53befff935340167bf79205638c805cd9ebc4852143e98d18437",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_9cd2cf8990c7cb77-b256-seed20260908.ptx",
+      "ptx_sha256": "bc744096aef1bce170475350f434aa0fa57494c327a791c0c409d419c4634464",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/LTTEUJGHP2QCWCG7MK2TUECTW5KWYUQDDQBNYAVEWGTOBNMCLKNQ",
+      "metadata_sha256": "f5eec6c5f21f057f12d6c18a62ce8f1382eb75ee7e6bd3202802add19a166046",
+      "cubin_sha256": "9330a4ef0152ff7caba1ba8110e5d97f7fd9d9cb7a8f35901a68b1e09d07c4e5",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:56 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "ce066950c336cc5e0b8f66f830f6127e9b5bc2af431c9034595870f0b3801540",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_b3013c0c981c39ac-b256-seed20260908.ptx",
+      "ptx_sha256": "32447a0117b24521f8a31dc77d8d16caf170ea086362497b993b7c234ffd7c19",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/D225ZW3LQQW6F55NAUPOZC4PJL56T3OLWMPAONOY6TEZTDLI4YDA",
+      "metadata_sha256": "c3748bc48771137e0bbff2ecc6c3e1d312f65ce76b72fa9067d672096194d8a9",
+      "cubin_sha256": "a7d0b719ea74d3a0dbbc3c5b797040bb6e92cdfae0857c7499d875358e1692ef",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "a9bbfc13e05b57446ee2167a83c8f8a30403944916f934ffda6382631cfc56dd",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_c71a0279eaf3451a-b256-seed20260908.ptx",
+      "ptx_sha256": "ad87e028e578091a29ef0dc985495556e2639e7d771d9de3bde7e0b9629014c8",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/EMVFHPMFPHWLRAERZMF3WQ7A5R3MIQKIWDYTQRD4YZQPRAVSZMDQ",
+      "metadata_sha256": "abc12103800c1d5eac9db4a2b1eded5a4b0b81d4767f55f959c3fcc226e4d208",
+      "cubin_sha256": "470a2a02829b519476c06874e2d01de8367bc7da9974300090cfc903be4caddb",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "6d66fd41ef4ce7da63ce5b4e992f75c88dc8068001b28ae9c4972543142a217f",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_ccafda2438d25cd0-b256-seed20260908.ptx",
+      "ptx_sha256": "e8af416690b2f3f3f03fe33b062654d4c0e4c42638e362cedf6caa09a9d8fea2",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/4H4ZEJH4SLMOZMRRHI6GV3ROA6NLRX6LYXYWJYUXLY2TUWXW72FQ",
+      "metadata_sha256": "4c96fffa6833a666566fd5a8e38dee2a476649047a88336b2bce423f2f90c195",
+      "cubin_sha256": "89f5fd2db23cf03b7716a3c675606d5adb8be3bd0990393caf329807c43041ee",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "223f59fc2bc68a7b3ee2180fca2681f1d1cd4566057879aaf1de30e8a68ec2fa",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_cda4fc3cdb408a40-b256-seed20260908.ptx",
+      "ptx_sha256": "4a930933b120ca699a3ad5a08a12fdaf4b51575ad987c299619b6b9d4b28ba35",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/JWJ2SISNCTVFMRLGNSFCQYY64LD7QOP5S2UWKGZNUQEQ4G5QTR7A",
+      "metadata_sha256": "1c12785dfd94d8c81cd754d96d590ed5c34b8c98c75282ca7e7f9c00166f6b30",
+      "cubin_sha256": "f7d5738b4588b54ce3da84e66e2419f0151be32ea3c43a75882a94acf99f27d5",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "2cce8b6312ed1bb09a6833ad25c8ed1b6ca4ccdd4f3a52825989a812744e4cd7",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_cdad9cfa0ae813f4-b256-seed20260908.ptx",
+      "ptx_sha256": "aa7ac0610d4865657c586c7e7b6c694be1cbdbe5cc9965ab4df2d03522fedfad",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/VHFPZYK42STHR2Y2KZJX5YFJ2J3JTEBSPB2V3SUYWUIY6FQAMW5A",
+      "metadata_sha256": "6c87ae28f1165caab8c66da6a04f1dd86e14fab27b9286c3f7ccc204f34c1fe9",
+      "cubin_sha256": "2a3f69a98e9c8d8ae4d592bb76fe5f2b2768799a29f87caffde8631a218bb203",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "4ea2258bc521d4f3009dbe683c0e2fad224a8c6d7ba8aac71c089199b6b33b08",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_dfa7d59269e0dcce-b256-seed20260908.ptx",
+      "ptx_sha256": "4f4d24ab1b2f5c1b234d972b132ecc7efb519fa9c4e50c909a8f4aa3aa8fb11a",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/JVGPRDCS364NHVGZIO75HZAHCPWYR4XQOZP4EAOP5OSTESZYPDDQ",
+      "metadata_sha256": "4134f6811aea48edf2c573d00881098cebf82ec0d58f81c734f7e2316122ac5a",
+      "cubin_sha256": "c53c3bb2d388cc66fe8b8e692fbf696b1e7af602703de7e0d73a967d3ffcd12f",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "4e132269b53d5a2ec0df28a345c2e901577782b900689bef7ef6bd5ade0e0412",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_e6299d9827421cfd-b256-seed20260908.ptx",
+      "ptx_sha256": "961fabb779b25ec3a6531ed02df1289c2d6fe95d20b28454d841beac6ba39086",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/J2SJPRSUTF4ZKCU2VX4QVOTYWXZGJGXNS5BYSKWE4OIYXCC7MQNA",
+      "metadata_sha256": "8a53e79bb3e359dc67b3e579f106aad6a0698694b01b82927a64a160418e1182",
+      "cubin_sha256": "c79d45ad5adedd64089e8cb2dec20c0a61d256ef8daaebe66da126670478ced6",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "784788b93bc91f5a48dbfefc4ad0cf942c72682067efb65948a8f8166814b025",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_e72c1d4984cc3237-b256-seed20260908.ptx",
+      "ptx_sha256": "681f9c622575d025ee39dc72e2ad925526b936bb6cb80d16969dcdc00c900c3a",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/JYIOTVZLPCLCCJS342YEXKU3TO77PHUKIHBQ3CCLNEABEIQG67RA",
+      "metadata_sha256": "de83f942ba45c14d3958d3c1466a43182bbbfaa85cbad4dae82a1f7076aa73d1",
+      "cubin_sha256": "7014228c1d0f8bdfa835e0e8b685a7f2eb1b9c4383745cbd21c35f373f39f62a",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "88217981a91a7a7498f2debf527a3f8db5034fc616689066773940f499067c86",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_ec7e1a0a64ff9301-b256-seed20260908.ptx",
+      "ptx_sha256": "581e51d435b88a090851f0f03dca51414c769cbce222cce5061ab9060b38ea2b",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/ATUE22OQ7KVBLGJENK2BODSW3LXUWE6CWIM2CE75DAGGC4X2L46Q",
+      "metadata_sha256": "ea6d14151dfb97e98792cf8ec1514854a5fe455d9ab67abd0b8fa815f73642ca",
+      "cubin_sha256": "31a331a3c087e161af3c81817f894adf0e8cff90322c963b0bebd023b2a8a385",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:40 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "bf4e30a2255e900551f16c6a380e37f602321b28c2f453cdfc77d3b647b10dae",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    },
+    {
+      "explicit_ptx": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/ptx/gc_ed9054140e50c934-b256-seed20260908.ptx",
+      "ptx_sha256": "2193adf342e4ef8cf30914859ddf1a4062d0ce0d32448124f8ee992281b5e87a",
+      "cache_group": "results/rtx4090/session-20260908-vast-03/complete-evidence/results/triton/triton-evaluate/jit-cache/JZO2IYSQR6AHISVAJ2LBBJ75G723UYNPW6N4W4WSTZVOKEYSJJUA",
+      "metadata_sha256": "9f8c58a7cc7c7c5a710171826b2f95d1b5f6d6c5c40483e9805cb3c1a5e6d893",
+      "cubin_sha256": "2fa93353fc04e1222e5475d096ed07266e24cc6338c436dcfadb7fe010c12e79",
+      "resource_text": "\nResource usage:\n Common:\n  GLOBAL:0\n Function direct:\n  REG:48 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:384 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "sass_sha256": "793cb6c4c18add689b88cc68dd3f932b87a9271aab54a3725e807c195562e03f",
+      "binding": "exact PTX byte match plus same cache directory metadata/cubin; not authenticated launched cubin"
+    }
+  ],
+  "limitations": [
+    "Directory association plus PTX identity does not prove compiler provenance or actual launched cubin identity.",
+    "Metadata default_dot_input_precision tf32 is a compiler default, not evidence of a dot operation; FP fusion false does not alone certify full numerical semantics."
+  ]
+}
