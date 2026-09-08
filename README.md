@@ -1,121 +1,187 @@
-[English](README.md) | [简体中文](README.zh-CN.md)
+# groupconv-atlas
 
-# GroupConv Atlas
+*Measure where the kernel wins, and whether the block keeps the gain.*
 
-A measured performance map of forward grouped convolution: when spatial mapping, shared-memory tiles and register reuse help, and when a tuned framework remains faster.
+> 逐形状量清内核在哪里变快，再检查收益能否留在完整模块里。
 
-The project combines C++, OpenMP, OpenCL, CUDA and a bounded Triton extension, developed with Codex assistance. See [contributions](docs/CONTRIBUTIONS.md) for authorship and explanation boundaries.
+[![CPU correctness](https://github.com/LucisZhang/groupconv-atlas/actions/workflows/cpu.yml/badge.svg)](https://github.com/LucisZhang/groupconv-atlas/actions/workflows/cpu.yml)
+[English / 中文对照](README.md) · [纯中文](README.zh-CN.md)
 
-**Inspect first:** [evidence index](docs/evidence-index.md) · [four bilingual interview questions](docs/interview-map.md) · [latest 80-point analysis](results/rtx4090/session-20260908-vast-03/analysis-atlas/summary.zh-CN.md).
-The frozen course work measures CPU and Apple M4 OpenCL. A separate RTX 4090 D
-run now includes real CUDA validation, an 80-point atlas, six confirmation points,
-and a ShuffleNetV2 block substitution at batches 1 and 4. See
-[the historical analysis](results/rtx4090d/analysis-20260908/summary.zh-CN.md).
+## Why this exists · 为什么做
 
-A subsequent RTX 4090 session completed real hardware profiling, layout/cache/transfer
-boundaries, direct cuDNN, model layers, MobileNetV2 blocks, Triton check/tune/holdout,
-and copy/FMA microbenchmarks. Its new 80-point 10×30 confirmation contains 129,000
-samples and complete within-run intervals. See [the new analysis](results/rtx4090/session-20260908-vast-03/analysis-atlas/summary.zh-CN.md).
+**GroupConv Atlas** asks when a custom grouped-convolution kernel is worth using.
+The work spans four CUDA implementations, CPU/OpenMP and Apple OpenCL references,
+a Triton subset, and a measurement pipeline that keeps complete outputs, raw timing
+batches, unsupported shapes and losing results together. The central finding is
+mixed: register reuse improves the direct CUDA baseline, while tuned PyTorch
+remains faster across the full Atlas.
 
-The frozen Apple OpenCL course package was delivered separately as a local course artifact.
+> GroupConv Atlas研究自定义分组卷积内核何时值得使用。我实现并比较四个CUDA版本，配套CPU/OpenMP、Apple OpenCL参考和Triton子集，把完整输出校验、原始计时批次、不支持项与退化结果放进同一套实验。主要发现并不单向：寄存器复用改进了直接CUDA实现，但在完整Atlas上仍未超过调优PyTorch。开发与实验使用Codex辅助，参与范围见[个人贡献](docs/CONTRIBUTIONS.md)。
 
-## Architecture and support
+## Quickstart · 快速开始
 
-Frozen shapes and precision policy → validated native/Triton calls → raw per-batch samples → paired analysis and atlas. The C ABI separates validation and dispatch from CPU, OpenCL and CUDA implementations; Python owns framework references, experiment orchestration and statistics.
+From a clone of this public repository, the first command needs only Python 3.9+.
+It checks published file hashes and recomputes batch medians, per-shape ratios and
+aggregate ratios from **129,000 raw samples**. It does not rerun the GPU or
+independently regenerate the bootstrap intervals.
 
-All native CUDA paths are FP32, contiguous NCHW, forward-only and bias-free. B geometry means Cin=Cout, 3×3, stride/dilation 1 and padding 1; legal groups and spatial tails remain checked.
-
-| Implementation | Contract | Latest atlas coverage |
-| --- | --- | --- |
-| CUDA k0 | General valid convolution geometry | 80/80 |
-| CUDA k1, k3 | B geometry | 80/80 each |
-| CUDA k2 | B geometry, channels/group ∈ {1,2,4} | 30/80; 50 unsupported |
-| Triton | B geometry, channels/group ∈ {1,2,4}; input/weight element counts < 2³¹ | 15/40 holdout; 25 unsupported |
-| CPU/OpenCL course path | Separate Apple M4 course experiment | 36 course shapes; not NVIDIA evidence |
-
-[k1](csrc/cuda/groupconv.cu) changes spatial mapping and specializes geometry; k2 stages a shared halo; k3 reuses inputs and weights across four horizontal outputs per thread. These are controlled implementation comparisons, not isolated proof of a single causal factor. [Profile and actual SM89 code](results/rtx4090/session-20260908-vast-03/analysis-profile/mechanism-review.zh-CN.md) explain both gains and failures.
-
-## Reproduce
-
-The fastest check needs CMake 3.20+, C++17 and a real OpenMP runtime:
+> 克隆这个公开仓库后，第一条命令只需Python 3.9+：它核对文件哈希，从129,000条原始样本复算批中位数、逐形状比值与汇总比值。GPU实验与bootstrap区间的重新生成属于另外的流程。
 
 ```sh
-# macOS with Homebrew LLVM: export CXX="$(brew --prefix llvm)/bin/clang++"
-cmake -S . -B build -DGC_ENABLE_OPENCL=OFF -DGC_ENABLE_CUDA=OFF -DCMAKE_BUILD_TYPE=Release
-cmake --build build --parallel 2
+python3 scripts/audit_public_evidence.py --root . --require-license
+
+# CMake 3.20+, C++17, and an OpenMP runtime
+./run.sh cpu
 ctest --test-dir build --output-on-failure
 ```
 
-On macOS, Homebrew LLVM/libomp supplies OpenMP; `./run.sh cpu` selects this toolchain when available. Python checks additionally need NumPy, PyTorch and pytest. `requirements-lock.txt` records the measured macOS environment; Linux CUDA uses `requirements-cuda.txt` and its matching development image.
+On macOS, `run.sh` selects Homebrew LLVM/libomp when available. CPU CI runs native
+correctness plus AddressSanitizer and UndefinedBehaviorSanitizer. Real GPU execution
+needs the matching hardware and dependencies; the archived results can be checked first.
 
-```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-lock.txt
-./run.sh cpu
-./run.sh check --backend cpu --output results/correctness.json
-# macOS GPU: ./run.sh opencl, then check --backend all
-# Linux RTX 4090: ./run.sh cuda -DCMAKE_CUDA_ARCHITECTURES=89
-# then: ./run.sh check --backend cuda
+> macOS下，`run.sh`会选用已安装的Homebrew LLVM/libomp。CPU CI另跑内存与未定义行为检查。Python输出检查与GPU重跑需要对应依赖和设备，见[验证指南](docs/execution/cuda-validation.md)、[macOS依赖记录](requirements-lock.txt)和[Linux CUDA依赖](requirements-cuda.txt)。
+
+## Headline · 核心结果
+
+The current **RTX 4090** Atlas covers **80 shapes × 6 implementations**:
+**430 PASS, 50 UNSUPPORTED**, with **10 batches × 30 samples** per supported row.
+All unsupported rows belong to k2's declared subset. The primary geometry is FP32,
+contiguous NCHW, equal input/output channels, 3×3, stride/dilation 1, padding 1 and no bias.
+<!-- src: configs/atlas.json; results/rtx4090/session-20260908-vast-03/analysis-atlas/analysis.json -->
+
+> 本轮RTX 4090覆盖80个形状、6个实现，共430 PASS、50 UNSUPPORTED；每个支持项采集10批、每批30个样本。不支持项全部来自k2的声明范围。主表固定FP32、连续NCHW、输入输出通道相等、3×3、步长与膨胀率1、填充1、无bias。
+
+| Comparison / 对照 | Graph device / 图内设备 | Synchronized API / 同步调用 |
+| --- | ---: | ---: |
+| Direct CUDA k0 / custom k3 | **3.8718×** | **3.4490×** |
+| Tuned PyTorch / custom k3 | **0.7384×** | **0.6448×** |
+| MobileNetV2 block, original / substituted, N=4 | **1.13849×** | **0.67902×** |
+
+Ratios are **baseline latency ÷ candidate latency**; values above one favor the
+candidate. The first two rows are geometric means over all 80 shapes, using the
+ratio of each shape's median batch medians. The third is one complete,
+random-weight block with a single convolution replaced.
+[Atlas results](results/rtx4090/session-20260908-vast-03/analysis-atlas/analysis.json) · [block results](results/rtx4090/session-20260908-vast-03/analysis-supplemental/module-n4.json).
+
+> 比值为基线时间除以候选时间，大于1表示候选更快。前两行对80个形状取几何平均；每个形状先取批中位数的中位数，再求基线／候选比值。第三行测的是随机权重的完整MobileNetV2模块，仅替换其中一个卷积。[Atlas数值](results/rtx4090/session-20260908-vast-03/analysis-atlas/analysis.json) · [模块数值](results/rtx4090/session-20260908-vast-03/analysis-supplemental/module-n4.json)。
+
+![RTX 4090: tuned PyTorch versus k3, across all 80 shapes](results/rtx4090/session-20260908-vast-03/analysis-atlas/atlas-tuned-vs-k3.png)
+
+*Figure 1 — every shape stays in the comparison. Against tuned PyTorch, Graph
+classifications are 34 WIN / 35 LOSS / 6 TIE / 5 UNCERTAIN; synchronized API is
+27 / 50 / 2 / 1. Ten paired batches, 95% bootstrap intervals and a 5% practical
+threshold describe variation within this session, not stability across sessions.*
+
+> 图1保留全部形状。对调优PyTorch，Graph为34 WIN、35 LOSS、6 TIE、5 UNCERTAIN；同步API依次为27、50、2、1。分类使用10个配对批次、95% bootstrap区间和5%实际差异阈值，只描述本轮内部变化，不代表跨会话稳定性。[完整矩阵与方法](results/rtx4090/session-20260908-vast-03/analysis-atlas/summary.zh-CN.md)。
+
+## What shipped · 交付内容
+
+```mermaid
+flowchart LR
+  S["Frozen shapes and precision policy"] --> V["Numerical and execution checks"]
+  K["CPU / OpenMP / OpenCL / CUDA / Triton"] --> V
+  V --> T["Raw batches with separate timing boundaries"]
+  T --> A["Per-shape ratios and confidence intervals"]
+  T --> B["Matched complete-block comparisons"]
+  A --> R["Atlas, failures and source-linked reports"]
+  B --> R
 ```
 
-An explicitly requested unavailable backend fails. `all` records absent CUDA as NOT_RUN; CPU and OpenCL remain required. CUDA performance/profiling instructions are in [the validation protocol](docs/execution/cuda-validation.md). The maintained source tree and exact measured numerical source are distinct: the public export includes `evidence/measured-source-031887c/` and `evidence/measured-source-identity.json` with the published subset and original hashes.
+The C ABI owns parameter validation, buffer/stream contracts and backend dispatch.
+Python owns framework references, experiment orchestration and paired analysis.
+Full-output FP32 checks and independent FP64 checks have separate coverage; the
+Atlas uses **64 FP64 reference points per supported row**, not full-output FP64.
 
-Audit an exported package without a GPU:
+> C ABI负责参数、缓冲区、stream契约和后端分派，Python负责框架参考、实验编排与配对统计。完整输出的FP32检查与独立FP64检查分别记录覆盖范围；Atlas每个支持项核对64个FP64参考点，并非完整输出FP64。
 
-```sh
-python scripts/audit_public_evidence.py --root .
-```
+| Implementation / 实现 | Change / 设计 | Support / 支持范围 |
+| --- | --- | --- |
+| k0 | Direct output mapping and general geometry / 通用直接实现 | 80/80 Atlas shapes |
+| k1 | Spatial mapping and fixed geometry / 空间映射与几何专用化 | 80/80 Atlas shapes |
+| k2 | Cooperative shared-halo loading / 协作加载共享halo | 30/80; channels/group 1, 2, 4 |
+| k3 | Four horizontal outputs per thread / 每线程四个水平输出复用 | 80/80 Atlas shapes |
+| Triton | Separately tuned kernel / 独立调优子集 | 15/40 holdout; channels/group 1, 2, 4; 25 unsupported |
 
-The export generates `docs/PUBLIC_EVIDENCE.md` describing redaction, original/public hashes and the retained evidence boundary. The CPU CI workflow runs native correctness and sanitizer builds; GPU evidence comes from the archived real-device experiments.
+k1–k3 and Triton use the main geometry above; Triton additionally requires input
+and weight element counts below 2³¹. Unsupported requests return an explicit status.
 
-## Contract and measurement
+> k1–k3和Triton采用前述主表几何；Triton另要求输入与权重元素数小于2³¹。超出范围的请求返回明确状态，实际契约见[CUDA源码](csrc/cuda/groupconv.cu)、[Triton支持契约](backends/triton/__init__.py)与[执行测试](tests/native_cuda.cu)。
 
-Stage B uses FP32 NCHW, no bias, equal input/output channels, 3×3 kernel,
-stride 1, padding 1, dilation 1, all legal groups and spatial tails. CPU and CUDA
-naive support more general geometry; dedicated kernels return UNSUPPORTED outside
-their declared subset. `configs/` contains 36 course shapes, 80 atlas shapes and
-disjoint tuning/holdout IDs. No kernel silently falls back to another implementation.
+## Why the gains stop · 收益在哪里失效
 
-Supported outputs are checked against same-policy FP32 PyTorch. The CUDA
-correctness suite uses an independent full-output FP64 oracle for boundary
-shapes and fixed FP64 reference points for course/batch-4 shapes. Atlas timings
-validate each supported full output against the FP32 CUDA framework reference.
-Timings preserve raw batches and separate synchronized API, OpenCL event, and explicit
-host/device buffer copy costs. Apple unified-memory copies are not PCIe transfer rates.
-CPU references and CPU PyTorch timings use an isolated process to keep the bundled
-OpenMP runtime separate from the native CPU runtime; IPC is excluded from those
-measurements. In CUDA runs, the default framework baseline shares the shape worker
-with native calls; the tuned baseline has its own process to isolate algorithm caches.
+**Shared memory has a cost.** In the six supported Nsight representative points,
+k2 is shorter than k1 at two points and longer at four. Its shared halo adds
+cooperative loading and barriers; the measured binary retains those operations.
+The counter and code observations support a tradeoff, but do not isolate bank
+conflicts or synchronization as the sole cause. These are single profiler captures,
+separate from ordinary timing and its confidence classifications.
+[Counter and SM89 review](results/rtx4090/session-20260908-vast-03/analysis-profile/mechanism-review.zh-CN.md).
 
-The default 5×30 samples are descriptive. Confirmed win/tie/loss classification requires
-10 independent paired batches and the frozen confidence rule. No claim of cuDNN
-superiority follows from CPU/OpenCL results.
+> 六个支持的Nsight代表点中，k2只在两个点比k1短，另外四个更长。共享halo带来输入复用，也增加协作加载和同步；实测二进制保留了这些操作。计数器与代码能解释其中的取舍，但不能把慢幅单独归因于bank conflict或barrier。这里比较的是单次profile采集，不能替代普通计时的置信判定。[计数器与实际SM89机器码](results/rtx4090/session-20260908-vast-03/analysis-profile/mechanism-review.zh-CN.md)。
 
-On the 80 CUDA atlas shapes, the descriptive geometric mean speedup of k3 over
-k0 is 3.919 for graph-device time and 3.040 for eager API time. Against tuned
-PyTorch, those ratios are 0.789 and 0.645: k3 does not improve the aggregate.
-The tested ShuffleNetV2 block also shows no measured eager benefit. These
-comparisons use the ratio of per-shape median batch medians; graph and eager
-conditions remain separate. Full denominators and paired confirmation results
-are in [the analysis](results/rtx4090d/analysis-20260908/summary.zh-CN.md).
-Nsight Compute counters were denied on that RTX 4090 D host. The subsequent RTX 4090
-session passed the counter gate and audited 30 formal captures across eight shapes.
-Its k3/k0 graph speedup is 3.8718; tuned PyTorch/k3 is 0.7384 for graph time and
-0.6448 for synchronized API time. These belong to the new device and protocol;
-they do not establish cross-session stability. Code, counters and measured-binary
-SASS support bounded mechanism analysis; a sustainable hardware roofline is not established.
+**A faster graph does not imply a faster call.** The N=4 MobileNetV2 block retains
+a Graph gain, yet synchronized API slows down. At N=1 the Graph ratio is 1.04879
+(TIE), and API is 0.66465 (LOSS). Allocation, invocation and the surrounding block
+change the measured result; random-weight output agreement establishes neither
+task accuracy nor whole-network speed.
+[Matched module analysis](results/rtx4090/session-20260908-vast-03/analysis-supplemental/summary.zh-CN.md).
 
-![Latest RTX 4090 atlas: tuned PyTorch versus k3](results/rtx4090/session-20260908-vast-03/analysis-atlas/atlas-tuned-vs-k3.png)
+> N=4模块保留了图内收益，同步调用却更慢。N=1的Graph比值为1.04879，判为TIE；API为0.66465，判为LOSS。分配、调用与模块周边工作都会影响结果，因此要分别测量，不能从单个内核直接推算应用延迟。随机权重输出一致也不证明任务准确率或整网提速。[配对模块分析](results/rtx4090/session-20260908-vast-03/analysis-supplemental/summary.zh-CN.md)。
 
-The latest Graph comparison against tuned PyTorch contains 34 WIN, 35 LOSS, 6 TIE and 5 UNCERTAIN points; synchronized API contains 27/50/2/1. These classifications use ten paired batches, 95% bootstrap intervals and a 5% practical threshold. The older RTX 4090 D 5×30 atlas, its six-point confirmation, and Apple course measurements remain separate evidence sets.
+## Further experiments · 扩展实验
 
-MobileNetV2 N=4 improves the complete block under Graph timing by 1.13849×, while synchronized API ratios are 0.66465 at N=1 and 0.67902 at N=4 (slower). Random-weight output checks do not establish task accuracy or whole-network speed. Direct cuDNN closes 32/32 planned layout/path units. Triton closes check/tune/holdout on the new GPU, but its five-batch, separately run suites remain descriptive and UNCERTAIN. Ascend has no implementation or NPU measurement. [Supplemental evidence](docs/evidence-index.md) retains all denominators.
+| Experiment / 实验 | Recorded result / 已记录结果 | Read / 查看 |
+| --- | --- | --- |
+| Hardware profiling | 8 shapes, 30 formal captures, 2 unsupported k2 combinations | [Nsight summary](results/rtx4090/session-20260908-vast-03/analysis-profile/summary.zh-CN.md) |
+| Direct cuDNN | 32/32 planned layout/path units passed | [Frontend analysis](results/rtx4090/session-20260908-vast-03/analysis-supplemental/frontend-order-corrected.json) |
+| Layout/cache/transfer | 276 PASS, 12 UNSUPPORTED | [Boundary analysis](results/rtx4090/session-20260908-vast-03/analysis-supplemental/boundaries.json) |
+| Extracted model layers | 36 PASS, 28 UNSUPPORTED, 8 NOT_RUN | [Layer analysis](results/rtx4090/session-20260908-vast-03/analysis-supplemental/models.json) |
+| Triton check/tune/holdout | Disjoint tuning and holdout; five-batch comparisons remain UNCERTAIN | [Triton summary](results/rtx4090/session-20260908-vast-03/analysis-triton/summary.zh-CN.md) |
 
-## Provenance and authorship
+Triton's fifteen supported holdout points are a subset, and its separately executed
+suites do not support paired statistical wins. Copy/FMA microbenchmarks and static
+code review have not established a sustainable hardware roofline. Ascend has no
+implementation, simulator result or NPU measurement.
 
-Source was developed with Codex assistance. Code review, numerical tests and recorded
-experiments provide implementation evidence; the owner attests to topic selection, design, code modification, experiment configuration, result checking and independent explanation. This testimony has not been independently assessed in an interview. Original kernel source was written for this project.
-External sources and dependency licenses are recorded in [REFERENCES](docs/REFERENCES.md). Project code uses [MIT](LICENSE); project-owned data and figures use [CC BY 4.0](DATA_LICENSE). [NOTICE](NOTICE) preserves attribution and third-party boundaries. Public/course exports
-exclude private job evidence, credentials, local virtual environments and machine paths.
+> Triton只覆盖holdout中的15个点，分开执行的五批套件不支持配对统计胜出。微基准和机器码审查尚未确立可持续roofline；Ascend尚无源码、模拟或NPU结果。
 
-See [中文说明](README.zh-CN.md) and [the evidence index](docs/evidence-index.md).
+The earlier RTX 4090 D five-batch Atlas and six-point confirmation remain separate.
+The Apple M4 OpenMP/OpenCL course package was delivered separately. Their devices,
+sampling and timing boundaries are not pooled with the current RTX 4090 results.
+
+> 旧RTX 4090 D五批主表与六点复测保留在[历史分析](results/rtx4090d/analysis-20260908/summary.zh-CN.md)，Apple M4课程包另行交付。它们的设备、采样和计时口径不与本轮RTX 4090合并。
+
+## Repository map · 从哪里读
+
+| Path / 路径 | Purpose / 内容 |
+| --- | --- |
+| [`csrc/`](csrc/) | Native implementations, C ABI and validation / 原生实现与接口 |
+| [`bench/`](bench/) | References, timing, module replacement and statistics / 参考、计时、模块与统计 |
+| [`backends/triton/`](backends/triton/) | Triton kernel and support contract / Triton实现与范围 |
+| [`configs/`](configs/) | Frozen shapes and measurement protocols / 固定形状与协议 |
+| [`results/`](results/) | Raw samples, figures and analyses / 原始样本、图表与分析 |
+| [`scripts/audit_public_evidence.py`](scripts/audit_public_evidence.py) | Recompute the published Atlas ratios / 复算公开Atlas比值 |
+| [`docs/evidence-index.md`](docs/evidence-index.md) | Device-specific results and original-file links / 按设备查结果与原始文件 |
+| [`docs/interview-map.md`](docs/interview-map.md) | Four bilingual questions with code and result pointers / 四个双语问题与定位 |
+
+The public package also retains the exact measured numerical-source subset and
+its original file hashes under `evidence/`. Its maintained source and measured
+snapshot remain separate; a later edit does not change an experiment's source identity.
+
+> `evidence/`保留实测数值源码子集及原始文件哈希，[公开文件说明](docs/PUBLIC_EVIDENCE.md)记录导出范围。当前维护源码与当时的测量快照分别记录，后续代码修改不会改变旧实验的源码归属。
+
+## Contribution and reuse · 个人贡献与复用
+
+I selected the problem, designed and modified the implementations, configured the
+experiments and reviewed the results with Codex assistance. My reported ability to
+explain the project independently is an owner statement, not an independently
+administered assessment. Contribution records distinguish this responsibility from
+upstream tools and established optimization techniques.
+
+> 我负责选题、方案设计、代码修改、实验配置与结果核对，开发过程使用Codex辅助。独立讲解能力为本人自述，尚无独立考核；上游工具和已有优化方法的归属见[贡献说明](docs/CONTRIBUTIONS.md)。
+
+Project code is [MIT](LICENSE). Project-owned experimental data and figures are
+[CC BY 4.0](DATA_LICENSE), attributed as described in [NOTICE](NOTICE).
+Dependencies and external sources retain their own terms; see [references](docs/REFERENCES.md).
+
+> 本项目代码采用[MIT](LICENSE)，项目自有实验数据与图表采用[CC BY 4.0](DATA_LICENSE)，复用时按[NOTICE](NOTICE)保留署名。依赖与外部资料沿用各自条款，见[参考资料](docs/REFERENCES.md)。
