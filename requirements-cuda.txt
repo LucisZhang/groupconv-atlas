@@ -1,0 +1,9 @@
+# Linux x86_64 / Python 3.12; use CUDA 12.8 development toolkit separately.
+# PyTorch wheel hashes were captured in the first verified GPU environment.
+torch @ https://download.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=4354fc05bb79b208d6995a04ca1ceef6a9547b1c4334435574353d381c55087c
+torchvision @ https://download.pytorch.org/whl/cu128/torchvision-0.23.0%2Bcu128-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=9cb3c13997afcb44057ca10d943c6c4cba3068afde0f370965abce9c89fcffa9
+triton==3.4.0
+numpy==2.3.2
+pytest==9.1.1
+nvidia-cudnn-cu12==9.10.2.21
+nvidia-cudnn-frontend==1.18.0

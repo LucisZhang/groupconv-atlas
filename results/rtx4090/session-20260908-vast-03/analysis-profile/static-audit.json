@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "commands_verified": 267,
+  "reexports_byte_identical": 33,
+  "binaries_verified": 115,
+  "manifest_sha256": "2ed608b1c96e48564af36413ae7747008d41ca90f84be2ddf15412637a20890d",
+  "collector_sha256": "6beaed8eb57f118586789317ef50a8c75bf5b9f9801d85fa09a3cc050950de16",
+  "library_sha256": "105dd38b9aa4982ca6f7dfaa2f9d3675d4e969a4163939557ca49e90f230873a",
+  "library_functions": [
+    {
+      "symbol": "_ZN45_GLOBAL__N__affd8c58_12_groupconv_cu_b6f0d22611shared_haloILi4EEEv8gc_shapePKfS3_Pflll",
+      "resources": "REG:40 STACK:0 SHARED:2880 LOCAL:0 CONSTANT[0]:512 TEXTURE:0 SURFACE:0 SAMPLER:0",
+      "static_opcode_occurrences": {
+        "FFMA": 36,
+        "LDG": 43,
+        "STG": 1,
+        "LDS": 36,
+        "STS": 7,
+        "BAR": 2,
+        "LDL": 0,
+        "STL": 0
+      }
+    },
+    {
+      "symbol": "_ZN45_GLOBAL__N__affd8c58_12_groupconv_cu_b6f0d22611shared_haloILi2EEEv8gc_shapePKfS3_Pflll",
+      "resources": "REG:40 STACK:0 SHARED:1440 LOCAL:0 CONSTANT[0]:512 TEXTURE:0 SURFACE:0 SAMPLER:0",
+      "static_opcode_occurrences": {
+        "FFMA": 18,
+        "LDG": 25,
+        "STG": 1,
+        "LDS": 18,
+        "STS": 7,
+        "BAR": 2,
+        "LDL": 0,
+        "STL": 0
+      }
+    },
+    {
+      "symbol": "_ZN45_GLOBAL__N__affd8c58_12_groupconv_cu_b6f0d22611shared_haloILi1EEEv8gc_shapePKfS3_Pflll",
+      "resources": "REG:40 STACK:0 SHARED:720 LOCAL:0 CONSTANT[0]:512 TEXTURE:0 SURFACE:0 SAMPLER:0",
+      "static_opcode_occurrences": {
+        "FFMA": 9,
+        "LDG": 16,
+        "STG": 1,
+        "LDS": 9,
+        "STS": 7,
+        "BAR": 2,
+        "LDL": 0,
+        "STL": 0
+      }
+    },
+    {
+      "symbol": "_ZN45_GLOBAL__N__affd8c58_12_groupconv_cu_b6f0d22616register_outputsE8gc_shapePKfS2_Pfll",
+      "resources": "REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:504 TEXTURE:0 SURFACE:0 SAMPLER:0",
+      "static_opcode_occurrences": {
+        "FFMA": 36,
+        "LDG": 27,
+        "STG": 16,
+        "LDS": 0,
+        "STS": 0,
+        "BAR": 0,
+        "LDL": 0,
+        "STL": 0
+      }
+    },
+    {
+      "symbol": "_ZN45_GLOBAL__N__affd8c58_12_groupconv_cu_b6f0d2267spatialE8gc_shapePKfS2_Pflll",
+      "resources": "REG:46 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:512 TEXTURE:0 SURFACE:0 SAMPLER:0",
+      "static_opcode_occurrences": {
+        "FFMA": 9,
+        "LDG": 18,
+        "STG": 1,
+        "LDS": 0,
+        "STS": 0,
+        "BAR": 0,
+        "LDL": 0,
+        "STL": 0
+      }
+    },
+    {
+      "symbol": "_ZN45_GLOBAL__N__affd8c58_12_groupconv_cu_b6f0d2265naiveE8gc_shapePKfS2_Pflll",
+      "resources": "REG:64 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:512 TEXTURE:0 SURFACE:0 SAMPLER:0",
+      "static_opcode_occurrences": {
+        "FFMA": 7,
+        "LDG": 14,
+        "STG": 1,
+        "LDS": 0,
+        "STS": 0,
+        "BAR": 0,
+        "LDL": 0,
+        "STL": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Opcode occurrences count static text, not dynamic instruction totals.",
+    "Reexport byte agreement confirms saved report-to-CSV reproducibility, not independent execution authentication.",
+    "Binary inspection cannot isolate causality of measured speed differences."
+  ]
+}

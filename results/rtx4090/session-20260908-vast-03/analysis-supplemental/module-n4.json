@@ -1,0 +1,557 @@
+{
+  "kind": "module",
+  "assessment": "AUDITED_DESCRIPTIVE",
+  "planned_units": 2,
+  "execution_counts": {
+    "PASS": 2
+  },
+  "units": [
+    {
+      "unit": "torch_block_tuned",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          57.34400078654289,
+          57.00266733765602,
+          57.00266733765602,
+          57.00266733765602,
+          55.296000093221664,
+          55.296000093221664,
+          55.296000093221664,
+          55.24266635378202,
+          55.26399984955788,
+          55.25866647561391
+        ],
+        "t_api_us": [
+          75.882,
+          75.32733333333333,
+          74.49166666666667,
+          74.96766666666667,
+          74.54266666666666,
+          74.89,
+          75.65033333333332,
+          75.0675,
+          77.201,
+          75.01050000000001
+        ],
+        "t_host_feed_us": [
+          72.43566666666666,
+          71.98083333333334,
+          70.86416666666668,
+          71.6355,
+          71.48633333333333,
+          72.00516666666667,
+          72.73216666666667,
+          72.30883333333333,
+          74.46633333333332,
+          72.02833333333334
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 55.296000093221664,
+        "t_api_us": 75.039,
+        "t_host_feed_us": 72.01675
+      }
+    },
+    {
+      "unit": "block_one_k3_substitution",
+      "execution_status": "PASS",
+      "assessment": "DESCRIPTIVE",
+      "batch_medians": {
+        "t_device_op_graph_us": [
+          50.23679882287979,
+          50.24639889597893,
+          50.29759854078293,
+          50.30079856514931,
+          48.53760153055191,
+          48.46080094575882,
+          48.33280146121979,
+          48.422401398420334,
+          48.53760153055191,
+          48.601601272821426
+        ],
+        "t_api_us": [
+          111.15889999999999,
+          109.70670000000001,
+          109.51319999999998,
+          110.4522,
+          110.56649999999999,
+          110.4534,
+          111.1908,
+          110.8229,
+          112.471,
+          110.1715
+        ],
+        "t_host_feed_us": [
+          110.5547,
+          109.1259,
+          108.8999,
+          109.8656,
+          109.9899,
+          109.8674,
+          110.5939,
+          110.2192,
+          111.89010000000002,
+          109.58670000000001
+        ]
+      },
+      "median_batch_medians": {
+        "t_device_op_graph_us": 48.56960140168667,
+        "t_api_us": 110.50995,
+        "t_host_feed_us": 109.92865
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "baseline": "torch_block_tuned",
+      "candidate": "block_one_k3_substitution",
+      "metric": "t_device_op_graph_us",
+      "ratio_of_median_batch_medians": 1.1384898886837769,
+      "batches": 10,
+      "classification": "WIN",
+      "ci95": [
+        1.134462739422661,
+        1.1410459384506118
+      ],
+      "inference_scope": "paired block bootstrap within this run only",
+      "paired": true
+    },
+    {
+      "baseline": "torch_block_tuned",
+      "candidate": "block_one_k3_substitution",
+      "metric": "t_api_us",
+      "ratio_of_median_batch_medians": 0.6790248298908831,
+      "batches": 10,
+      "classification": "LOSS",
+      "ci95": [
+        0.6773299326649573,
+        0.6827661297299654
+      ],
+      "inference_scope": "paired block bootstrap within this run only",
+      "paired": true
+    }
+  ],
+  "setup_conversion_profile_separate": {
+    "model_first_call_with_hooks_us": 212803.97,
+    "model_first_call_with_hooks_boundary": "includes initialization/search, forward hooks, tensor clones, metadata recording and synchronization; not pure search cost",
+    "profile": {
+      "status": "PASS",
+      "excluded_from_timing_samples": true,
+      "target_device_time_fraction_p": "UNKNOWN",
+      "p_reason": "CPU module markers alone do not establish exact ownership of asynchronous GPU work; no Amdahl estimate",
+      "scope": "one eager original block and one eager substituted block, after all timed batches",
+      "trace_path": "/root/groupconv-results-03/supplemental/module-n4/block-profile-trace.json",
+      "trace_sha256": "244dbb15b79e8a7a5d229fd4ab2ca4fdb7255c8b60bbe6c8eefecdded60b9d55",
+      "event_summary_path": "/root/groupconv-results-03/supplemental/module-n4/block-profile-events.json",
+      "kernel_event_count": 20,
+      "module_marker_count": 8
+    },
+    "amdahl_instrumented": {
+      "status": "PASS",
+      "measurements": {
+        "baseline": {
+          "samples": [
+            {
+              "sample": 0,
+              "block_graph_us": 59.20000001788139,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29405405912224486
+            },
+            {
+              "sample": 1,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 2,
+              "block_graph_us": 58.33600088953972,
+              "target_graph_us": 16.383999958634377,
+              "p": 0.2808557273176435
+            },
+            {
+              "sample": 3,
+              "block_graph_us": 59.07199904322624,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29469123420991045
+            },
+            {
+              "sample": 4,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 5,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 6,
+              "block_graph_us": 59.13599953055382,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.2943723018717354
+            },
+            {
+              "sample": 7,
+              "block_graph_us": 58.240000158548355,
+              "target_graph_us": 16.383999958634377,
+              "p": 0.28131867984257836
+            },
+            {
+              "sample": 8,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 9,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 16.383999958634377,
+              "p": 0.2807017482274906
+            },
+            {
+              "sample": 10,
+              "block_graph_us": 58.01599845290184,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.3000551704617656
+            },
+            {
+              "sample": 11,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 12,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 16.383999958634377,
+              "p": 0.2807017482274906
+            },
+            {
+              "sample": 13,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 14,
+              "block_graph_us": 59.167999774217606,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.2942130944382627
+            },
+            {
+              "sample": 15,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 16.383999958634377,
+              "p": 0.2807017482274906
+            },
+            {
+              "sample": 16,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 17,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 18,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 19,
+              "block_graph_us": 57.95200169086456,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.3003865232844779
+            },
+            {
+              "sample": 20,
+              "block_graph_us": 58.30400064587593,
+              "target_graph_us": 16.383999958634377,
+              "p": 0.2810098754311344
+            },
+            {
+              "sample": 21,
+              "block_graph_us": 58.20799991488457,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29906542624295757
+            },
+            {
+              "sample": 22,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 23,
+              "block_graph_us": 59.13599953055382,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.2943723018717354
+            },
+            {
+              "sample": 24,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 16.383999958634377,
+              "p": 0.2807017482274906
+            },
+            {
+              "sample": 25,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 26,
+              "block_graph_us": 58.30400064587593,
+              "target_graph_us": 16.767999157309532,
+              "p": 0.2875960306592717
+            },
+            {
+              "sample": 27,
+              "block_graph_us": 58.36800113320351,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.29824561347522643
+            },
+            {
+              "sample": 28,
+              "block_graph_us": 57.95200169086456,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.3003865232844779
+            },
+            {
+              "sample": 29,
+              "block_graph_us": 58.30400064587593,
+              "target_graph_us": 17.40800030529499,
+              "p": 0.2985729986356661
+            }
+          ],
+          "block_graph_us": 58.36800113320351,
+          "target_graph_us": 17.40800030529499
+        },
+        "candidate": {
+          "samples": [
+            {
+              "sample": 0,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 11.264000087976456,
+              "p": 0.21568628010454266
+            },
+            {
+              "sample": 1,
+              "block_graph_us": 51.19999870657921,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.2
+            },
+            {
+              "sample": 2,
+              "block_graph_us": 51.19999870657921,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.2
+            },
+            {
+              "sample": 3,
+              "block_graph_us": 52.032001316547394,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.1968019580684336
+            },
+            {
+              "sample": 4,
+              "block_graph_us": 51.19999870657921,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.2
+            },
+            {
+              "sample": 5,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19607842997386432
+            },
+            {
+              "sample": 6,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19607842997386432
+            },
+            {
+              "sample": 7,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 11.264000087976456,
+              "p": 0.21568628010454266
+            },
+            {
+              "sample": 8,
+              "block_graph_us": 51.19999870657921,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.2
+            },
+            {
+              "sample": 9,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 11.264000087976456,
+              "p": 0.21568628010454266
+            },
+            {
+              "sample": 10,
+              "block_graph_us": 51.93600058555603,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.1971657352484646
+            },
+            {
+              "sample": 11,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19607842997386432
+            },
+            {
+              "sample": 12,
+              "block_graph_us": 51.90400034189224,
+              "target_graph_us": 10.33599954098463,
+              "p": 0.19913685790885644
+            },
+            {
+              "sample": 13,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19607842997386432
+            },
+            {
+              "sample": 14,
+              "block_graph_us": 52.15999856591225,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.1963190188430702
+            },
+            {
+              "sample": 15,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19607842997386432
+            },
+            {
+              "sample": 16,
+              "block_graph_us": 52.15999856591225,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.1963190188430702
+            },
+            {
+              "sample": 17,
+              "block_graph_us": 52.06400156021118,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19668099712761122
+            },
+            {
+              "sample": 18,
+              "block_graph_us": 52.06400156021118,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19668099712761122
+            },
+            {
+              "sample": 19,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 11.264000087976456,
+              "p": 0.21568628010454266
+            },
+            {
+              "sample": 20,
+              "block_graph_us": 52.000001072883606,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19692306788539057
+            },
+            {
+              "sample": 21,
+              "block_graph_us": 51.872000098228455,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19740900142513612
+            },
+            {
+              "sample": 22,
+              "block_graph_us": 52.000001072883606,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19692306788539057
+            },
+            {
+              "sample": 23,
+              "block_graph_us": 51.872000098228455,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19740900142513612
+            },
+            {
+              "sample": 24,
+              "block_graph_us": 51.19999870657921,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.2
+            },
+            {
+              "sample": 25,
+              "block_graph_us": 51.83999985456467,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19753085976164753
+            },
+            {
+              "sample": 26,
+              "block_graph_us": 51.19999870657921,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.2
+            },
+            {
+              "sample": 27,
+              "block_graph_us": 52.12799832224846,
+              "target_graph_us": 10.239999741315842,
+              "p": 0.19643953481607915
+            },
+            {
+              "sample": 28,
+              "block_graph_us": 51.19999870657921,
+              "target_graph_us": 11.264000087976456,
+              "p": 0.2200000072759578
+            },
+            {
+              "sample": 29,
+              "block_graph_us": 52.22399905323982,
+              "target_graph_us": 11.264000087976456,
+              "p": 0.21568628010454266
+            }
+          ],
+          "block_graph_us": 52.04800143837929,
+          "target_graph_us": 10.239999741315842
+        }
+      },
+      "p": 0.29824561347522643,
+      "s": 1.7000000727595779,
+      "predicted_block_speedup": 1.1400000094587448,
+      "observed_instrumented_block_speedup": 1.1214263664341964,
+      "boundary": "four external event nodes in one captured complete block, target bracketed by hooks; one same non-default stream",
+      "excluded_from_main_latency_samples": true,
+      "limitations": "instrumented estimate; graph event nodes may perturb scheduling; assumes other block work unchanged; not eager API or whole-model prediction"
+    }
+  },
+  "context": [
+    "paired randomized implementation blocks within this run; no independent-session inference"
+  ],
+  "source_tree_sha256": "5b499cd77b1594e501fce8c8d457ec147ffe410ae5764fa6b1df1a4566934cbd",
+  "analysis_script_sha256": "50d22e5fed0f54d63247d29e478d56b90a3ef5db549aadd6d0e6ddf5c733cf3f",
+  "python_version": "3.14.4",
+  "input_artifacts_sha256": {
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/module-n4/summary.json": "5c414cbb5cf3d8e1a3d65d77e0a8840825d82149585c07db0a4612ae32a61575",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/module-n4/samples.jsonl": "34604629457c12c6e7c96bb5d8e607e381cf91c8c81a7c9aec4f14464e8db5fe",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/results/supplemental/module-n4/random-state.pt": "33295b3dbf0f86e47301ed59aff74fa704fcdf062ce7b8fbcdd025878ae44fa6",
+    "results/rtx4090/session-20260908-vast-03/supplemental-evidence/bootstrap/validation/correctness.json": "ca7e9774961b2f3ce44aa8e9a76954e9da61fc11ef1467ac1436cf26c7951b86"
+  },
+  "statistics": {
+    "estimator": "median(batch medians); baseline/candidate ratio",
+    "ci": "paired batch-index bootstrap only for verified randomized module blocks",
+    "bootstrap_draws": 10000,
+    "seed": 20260908,
+    "practical_margin": 1.05,
+    "minimum_batches_for_ci": 10
+  },
+  "plan_sha256": "9a8389214a08567cc9175f87c1900d95268eadcbe9817cc42f0d56de1c051cf7"
+}

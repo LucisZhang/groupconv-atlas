@@ -1,0 +1,10 @@
+{
+  "kind": "audited_atlas_figure_v1",
+  "analysis_sha256": "122c40f288260edd975e069a918ddfc2a38ed37d384294a9e076966277cdf169",
+  "shape_config_sha256": "5903e1b0b3401c5597afa2f2a906fd73c636aba250c115c48e0e8156b4c92bc7",
+  "script_sha256": "e01ff144c36f53f5c242b9bb2f850eabdea9d05b31fc9b8fc8f1c1d0a75534c2",
+  "image_sha256": "a0ee917800d9165b97593af4f786f378bedc535313333d2c5c00e5953e3d69b9",
+  "shape_count": 80,
+  "boundaries": 2,
+  "classifications_recomputed": false
+}

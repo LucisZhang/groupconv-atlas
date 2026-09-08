@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "frozen_date": "2026-09-08",
+  "count": 3,
+  "shapes": [
+    {
+      "n": 4,
+      "cin": 16,
+      "cout": 16,
+      "h": 16,
+      "w": 16,
+      "r": 3,
+      "s": 3,
+      "groups": 1,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_44d26abd4d1c8729",
+      "input_dims": [
+        4,
+        16,
+        16,
+        16
+      ],
+      "weight_dims": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "output_dims": [
+        4,
+        16,
+        16,
+        16
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 4,
+      "cin": 16,
+      "cout": 16,
+      "h": 16,
+      "w": 16,
+      "r": 3,
+      "s": 3,
+      "groups": 4,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_950d76d0f8d2cd53",
+      "input_dims": [
+        4,
+        16,
+        16,
+        16
+      ],
+      "weight_dims": [
+        16,
+        4,
+        3,
+        3
+      ],
+      "output_dims": [
+        4,
+        16,
+        16,
+        16
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    },
+    {
+      "n": 4,
+      "cin": 16,
+      "cout": 16,
+      "h": 16,
+      "w": 16,
+      "r": 3,
+      "s": 3,
+      "groups": 16,
+      "sh": 1,
+      "sw": 1,
+      "ph": 1,
+      "pw": 1,
+      "dh": 1,
+      "dw": 1,
+      "shape_id": "gc_4fb83e8c2da0b18d",
+      "input_dims": [
+        4,
+        16,
+        16,
+        16
+      ],
+      "weight_dims": [
+        16,
+        1,
+        3,
+        3
+      ],
+      "output_dims": [
+        4,
+        16,
+        16,
+        16
+      ],
+      "dtype": "float32",
+      "layout": "NCHW",
+      "bias": false
+    }
+  ]
+}

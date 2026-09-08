@@ -1,0 +1,170 @@
+{
+  "kind": "frontend",
+  "assessment": "NOT_ASSESSED",
+  "reason": "Frontend planned denominator mismatch",
+  "performance_failure_claimed": false,
+  "planned_units": 32,
+  "units": [
+    {
+      "unit": "gc_78e99ae160f2dd60/nchw/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_78e99ae160f2dd60/nchw/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_78e99ae160f2dd60/channels_last/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_78e99ae160f2dd60/channels_last/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_ccafda2438d25cd0/nchw/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_ccafda2438d25cd0/nchw/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_ccafda2438d25cd0/channels_last/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_ccafda2438d25cd0/channels_last/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_89f7910f07a199fb/nchw/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_89f7910f07a199fb/nchw/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_89f7910f07a199fb/channels_last/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_89f7910f07a199fb/channels_last/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_f49992cd44897fbf/nchw/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_f49992cd44897fbf/nchw/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_f49992cd44897fbf/channels_last/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_f49992cd44897fbf/channels_last/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_053183ea91616041/nchw/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_053183ea91616041/nchw/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_053183ea91616041/channels_last/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_053183ea91616041/channels_last/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_62e0ae05b7836be7/nchw/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_62e0ae05b7836be7/nchw/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_62e0ae05b7836be7/channels_last/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_62e0ae05b7836be7/channels_last/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_866eddd9507e8dc4/nchw/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_866eddd9507e8dc4/nchw/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_866eddd9507e8dc4/channels_last/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_866eddd9507e8dc4/channels_last/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_8a8acca0747584c4/nchw/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_8a8acca0747584c4/nchw/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_8a8acca0747584c4/channels_last/resident",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    },
+    {
+      "unit": "gc_8a8acca0747584c4/channels_last/caller_nchw",
+      "assessment": "NOT_ASSESSED",
+      "execution_status": "UNKNOWN"
+    }
+  ],
+  "plan_sha256": "9a8389214a08567cc9175f87c1900d95268eadcbe9817cc42f0d56de1c051cf7"
+}

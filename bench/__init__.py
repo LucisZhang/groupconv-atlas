@@ -1,0 +1,1 @@
+"""Reproducible grouped-convolution experiments."""

@@ -1,0 +1,2 @@
+#pragma once
+static const char *gc_opencl_source = R"GC_OPENCL(@GC_OPENCL_SOURCE@)GC_OPENCL";
