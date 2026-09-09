@@ -5,7 +5,6 @@
 > 逐形状量清内核在哪里变快，再检查收益能否留在完整模块里。
 
 [![CPU correctness](https://github.com/LucisZhang/groupconv-atlas/actions/workflows/cpu.yml/badge.svg)](https://github.com/LucisZhang/groupconv-atlas/actions/workflows/cpu.yml)
-[English / 中文对照](README.md) · [纯中文](README.zh-CN.md)
 
 ## Why this exists · 为什么做
 
@@ -16,7 +15,7 @@ batches, unsupported shapes and losing results together. The central finding is
 mixed: register reuse improves the direct CUDA baseline, while tuned PyTorch
 remains faster across the full Atlas.
 
-> GroupConv Atlas研究自定义分组卷积内核何时值得使用。我实现并比较四个CUDA版本，配套CPU/OpenMP、Apple OpenCL参考和Triton子集，把完整输出校验、原始计时批次、不支持项与退化结果放进同一套实验。主要发现并不单向：寄存器复用改进了直接CUDA实现，但在完整Atlas上仍未超过调优PyTorch。开发与实验使用Codex辅助，参与范围见[个人贡献](docs/CONTRIBUTIONS.md)。
+> GroupConv Atlas研究自定义分组卷积内核何时值得使用。项目实现并比较四个CUDA版本，配套CPU/OpenMP、Apple OpenCL参考和Triton子集，把完整输出校验、原始计时批次、不支持项与退化结果放进同一套实验。主要发现并不单向：寄存器复用改进了直接CUDA实现，但在完整Atlas上仍未超过调优PyTorch。
 
 ## Quickstart · 快速开始
 
@@ -170,15 +169,7 @@ snapshot remain separate; a later edit does not change an experiment's source id
 
 > `evidence/`保留实测数值源码子集及原始文件哈希，[公开文件说明](docs/PUBLIC_EVIDENCE.md)记录导出范围。当前维护源码与当时的测量快照分别记录，后续代码修改不会改变旧实验的源码归属。
 
-## Contribution and reuse · 个人贡献与复用
-
-I selected the problem, designed and modified the implementations, configured the
-experiments and reviewed the results with Codex assistance. My reported ability to
-explain the project independently is an owner statement, not an independently
-administered assessment. Contribution records distinguish this responsibility from
-upstream tools and established optimization techniques.
-
-> 我负责选题、方案设计、代码修改、实验配置与结果核对，开发过程使用Codex辅助。独立讲解能力为本人自述，尚无独立考核；上游工具和已有优化方法的归属见[贡献说明](docs/CONTRIBUTIONS.md)。
+## License · 许可
 
 Project code is [MIT](LICENSE). Project-owned experimental data and figures are
 [CC BY 4.0](DATA_LICENSE), attributed as described in [NOTICE](NOTICE).

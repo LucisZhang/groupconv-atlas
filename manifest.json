@@ -877,25 +877,14 @@
     },
     {
       "path": "README.md",
-      "sha256": "2958e11e43ce8a6dd5f40b58d8830d90098fab1a4f9691966ee1646b261b05c7",
-      "bytes": 14276,
+      "sha256": "9e00042a189a2fe3a12ef741c5035a18c0020b663fd33b34ed4b401032a8b31a",
+      "bytes": 13452,
       "evidence_category": "documentation",
-      "generation": "allowlisted input; identifying strings redacted",
+      "generation": "Project overview and bilingual documentation",
       "license": "MIT",
       "source_path": "README.md",
       "source_sha256": "2958e11e43ce8a6dd5f40b58d8830d90098fab1a4f9691966ee1646b261b05c7",
-      "byte_identical": true
-    },
-    {
-      "path": "README.zh-CN.md",
-      "sha256": "f34b85b4c40344137d0c2c2adc91b302f4e5cca3ce2c3f3ef5140a76099184c3",
-      "bytes": 8325,
-      "evidence_category": "documentation",
-      "generation": "allowlisted input; identifying strings redacted",
-      "license": "MIT",
-      "source_path": "README.zh-CN.md",
-      "source_sha256": "f34b85b4c40344137d0c2c2adc91b302f4e5cca3ce2c3f3ef5140a76099184c3",
-      "byte_identical": true
+      "byte_identical": false
     },
     {
       "path": "docs/CONTRIBUTIONS.md",
